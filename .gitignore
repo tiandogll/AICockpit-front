@@ -1,0 +1,56 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+deployment/server/runtime.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.json
+htmlcov/
+.venv/
+
+# Node
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime data and generated artifacts
+/output/
+*.zip
+*.zip.sha256
+data/
+uploads/
+logs/
+backups/
+/output/business-demo/
+/output/password-change-browser/
+/output/password-main-upgrade-*/
+/output/password-change-runtime.py
+/output/password-main-upgrade.py
+*.log
+*.sqlite3
+*.db
+
+# Office exports and private research data
+pilot-data/
+private-data/
+/deployment/private-handoff/.restored.json
+*.xlsx
+*.csv
+!apps/api/app/resources/item-bank-import-template.xlsx

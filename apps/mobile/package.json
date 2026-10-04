@@ -1,0 +1,12 @@
+{
+  "name": "ai-measure-mobile",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ../web/node_modules/vite/bin/vite.js --host 0.0.0.0 --port 5174 --strictPort",
+    "build": "node ../web/node_modules/vite/bin/vite.js build",
+    "type-check": "node ../web/node_modules/vue-tsc/bin/vue-tsc.js --noEmit -p tsconfig.json",
+    "preview": "node ../web/node_modules/vite/bin/vite.js preview --host 0.0.0.0 --port 5174 --strictPort"
+  }
+}

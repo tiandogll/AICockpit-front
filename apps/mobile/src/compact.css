@@ -1,0 +1,46 @@
+/* Density tokens belong to the independent mobile entry, not the PC views.
+   Layout is reflowed at its real size; no zoom/scale or business data changes. */
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) {
+  --compact-gap: 12px;
+  --compact-pad: 14px;
+  --compact-radius: 14px;
+  --compact-body: 13px;
+  --compact-title: 16px;
+  --muted: #61767d;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .mobile-content > :not(.mobile-page-end):not(.assessment-frame) {
+  padding: 16px 14px !important;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .page-heading {
+  gap: 8px !important;
+  margin-bottom: 14px !important;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .page-heading h1 {
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  letter-spacing: -.4px;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .page-heading p {
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+  margin: 4px 0 0 !important;
+  color: var(--muted);
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .page-heading > a {
+  min-height: 44px !important;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .state-panel {
+  padding: 24px 16px !important;
+  min-height: 0 !important;
+  border-radius: var(--compact-radius) !important;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .state-panel h2 {
+  font-size: 16px !important;
+}
+.mobile-app:is(.mobile-page-assessment, .mobile-page-reports, .mobile-page-training) .mobile-page-end {
+  padding: 18px 0 16px;
+}

@@ -1,0 +1,22 @@
+/* Toolbar-only refinement. The original sidebar, brand and page palette
+   intentionally come from their existing scoped styles. */
+.measure-app.app-layout .measure-toolbar {
+  background: #fff;
+  border-bottom-color: #dfe6ed;
+}
+.measure-app.app-layout .measure-toolbar .breadcrumb {
+  color: #607086;
+}
+.measure-app.app-layout .measure-toolbar .breadcrumb strong {
+  color: #243447;
+  font-weight: 650;
+}
+.measure-app.app-layout .measure-toolbar .breadcrumb-divider {
+  font-size: 0;
+  color: #8492a3;
+}
+.measure-app.app-layout .measure-toolbar .breadcrumb-divider::after {
+  content: '›';
+  font-size: 18px;
+  font-weight: 400;
+}

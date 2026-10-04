@@ -1,0 +1,780 @@
+/* Public reference pages only: do not alter assessment or authenticated chrome. */
+@media (min-width: 1280px) {
+  .measure-app.public-design .hero.shell .hero-radar {
+    margin-top: 8px;
+    width: 328px;
+  }
+  .measure-app.public-design .hero.shell .hero-signature {
+    bottom: 31px;
+  }
+  .measure-app.public-design .hero.shell {
+    height: 901px;
+  }
+  .measure-app.public-design .hero .proof-row {
+    font-size: 16px;
+    gap: 32px;
+  }
+  .measure-app.public-design .hero .hero-copy::after {
+    right: 21%;
+  }
+  .measure-app.public-design .hero .dimension-copy small {
+    font-size: 17px;
+  }
+  .measure-app.public-design .hero .dimension-row {
+    grid-template-columns: 36px minmax(0, 1fr) 44px;
+  }
+  .measure-app.public-design .hero .atlas-footer {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  .measure-app.public-design .method.shell .method-grid {
+    grid-template-columns: 1.035fr 1fr 1.035fr;
+    gap: 18px;
+  }
+  .measure-app.public-design .method.shell .section-heading {
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .measure-app.public-design .method.shell .section-heading > p {
+    font-size: 17px;
+    white-space: nowrap;
+  }
+  .measure-app.public-design .method.shell .method-card {
+    padding-inline: 29px;
+  }
+  .measure-app.public-design .method.shell .method-card .public-illustration {
+    width: calc(100% + 24px);
+    margin-left: -12px;
+  }
+  .measure-app.public-design .signal-band .signal-grid {
+    grid-template-columns: 1.11fr 0.89fr 0.99fr 1.01fr;
+  }
+  .measure-app.public-design .help-page .help-intro .guide-art {
+    right: 24px;
+    top: 14px;
+    width: 437px;
+  }
+  .measure-app.public-design .help-page .help-intro .guide-art .reference-artwork {
+    width: 277px;
+    height: 165px;
+  }
+  .measure-app.public-design .help-page .help-intro .guide-art > span {
+    bottom: 25px;
+    right: 10px;
+  }
+  .measure-app.public-design .help-page .support-heading h2 {
+    letter-spacing: 1px;
+    font-size: 54px;
+    line-height: 1.25;
+  }
+  .measure-app.public-design .help-page .support-heading h2 em {
+    margin-left: 10px;
+  }
+  .measure-app.public-design .help-page .start-steps {
+    grid-template-columns: 1fr 1fr 0.94fr 0.84fr;
+  }
+  .measure-app.public-design .help-page .start-bottom a {
+    padding-inline: 24px;
+    font-size: 16px;
+  }
+  .measure-app.public-design .help-page .start-steps p,
+  .measure-app.public-design .help-page .numbered-rules li {
+    font-size: 15px;
+  }
+  .measure-app.public-design .help-page .level-table > div {
+    font-size: 14px;
+  }
+  .measure-app.public-design .help-page .help-heading h1 {
+    letter-spacing: 0.4px;
+  }
+  .measure-app.public-design header.public-toolbar .primary-button {
+    min-height: 47px;
+    padding-block: 10px;
+  }
+  .measure-app.public-design:not(:has(.help-page)) header.public-toolbar nav {
+    transform: translate(13px, 5px);
+  }
+}
+@media (min-width: 1280px) {
+  .measure-app.public-design .help-page .support-grid {
+    row-gap: 13px;
+  }
+  .measure-app.public-design .help-page .support-card:nth-child(n + 5) ul {
+    line-height: 1.6;
+  }
+  .measure-app.public-design .help-page .support-section {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .measure-app.public-design .help-page .support-card:nth-child(3) ul {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .measure-app.public-design .hero-copy::after {
+    right: 21%;
+  }
+  .measure-app.public-design .hero .hero-radar {
+    margin-top: 28px;
+  }
+  .measure-app.public-design .help-page .guide-art .public-illustration {
+    height: 214px;
+    width: 310px;
+  }
+}
+.measure-app.public-design::before,
+.measure-app.public-design::after {
+  display: none;
+}
+.measure-app.public-design .hero-copy::before {
+  border-color: #a6e6f780;
+  inset: 50px 26px 150px -125px;
+  transform: rotate(-22deg);
+}
+.measure-app.public-design .hero-copy::after {
+  content: '';
+  position: absolute;
+  right: 11%;
+  top: 102px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #64cadd;
+  border: 1px solid white;
+  box-shadow:
+    103px 135px 0 -2px #55c3d9,
+    47px 412px 0 -2px #55c3d9;
+  pointer-events: none;
+  z-index: -1;
+}
+/* Measurements from the supplied 1586×992 and 1513×1040 reference images. */
+@media (min-width: 1280px) {
+  .measure-app.public-design .hero .hero-actions a {
+    font-size: 21px;
+  }
+  .measure-app.public-design .help-page .support-section {
+    padding-top: 22px;
+  }
+  .measure-app.public-design .public-footer:has(+ dialog) {
+    margin-top: 0;
+  }
+  .measure-app.public-design:has(.help-page) .public-footer {
+    border: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding-top: 0;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1280px) {
+  .measure-app.public-design main .method {
+    min-height: 709px;
+  }
+  .measure-app.public-design .help-page .help-intro .help-heading {
+    min-height: 180px;
+    padding-top: 21px;
+  }
+  .measure-app.public-design .help-page .start-card {
+    min-height: 254px;
+  }
+  .measure-app.public-design .help-page .start-bottom a {
+    min-height: 48px;
+    padding-block: 10px;
+  }
+  .measure-app.public-design .hero .display-title {
+    margin-top: 24px;
+  }
+  .measure-app.public-design .atlas-header strong {
+    padding-block: 5px;
+  }
+  .measure-app.public-design .help-page .help-heading {
+    padding-top: 11px;
+    min-height: 169px;
+  }
+  .measure-app.public-design:has(.help-page) header.public-toolbar {
+    height: 80px;
+    border-bottom-color: transparent;
+  }
+  .measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand > span {
+    font-size: 23px;
+  }
+  .measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand small {
+    font-size: 13px;
+  }
+  .measure-app.public-design:has(.help-page) header.public-toolbar nav {
+    font-size: 14px;
+    gap: 27px;
+  }
+  .measure-app.public-design:has(.help-page) header.public-toolbar .primary-button {
+    font-size: 15px;
+    min-height: 43px;
+    padding: 8px 20px;
+  }
+  .measure-app.public-design:has(.help-page) #support {
+    scroll-margin-top: 80px;
+  }
+  .measure-app.public-design .hero.shell {
+    width: 89.6%;
+    max-width: 1600px;
+    margin-left: 6.43%;
+    margin-right: auto;
+    min-height: 901px;
+  }
+  .measure-app.public-design .hero-lead {
+    max-width: 610px;
+  }
+  .measure-app.public-design .atlas-footer {
+    font-size: 15px;
+    min-height: 75px;
+    padding: 17px;
+  }
+  .measure-app.public-design .atlas-header {
+    padding-bottom: 19px;
+  }
+  .measure-app.public-design .hero-radar {
+    width: 330px;
+    margin-left: 117px;
+    margin-top: 18px;
+  }
+  .measure-app.public-design .hero-signature {
+    bottom: 31px;
+  }
+  .measure-app.public-design .proof-row {
+    gap: 30px;
+  }
+  .measure-app.public-design .hero-actions .primary-button {
+    min-width: 234px;
+  }
+  .measure-app.public-design .hero-actions .secondary-button {
+    min-width: 192px;
+  }
+  .measure-app.public-design .method {
+    min-height: 709px;
+    padding-top: 42px;
+    padding-bottom: 60px;
+  }
+  .measure-app.public-design .section-heading {
+    padding-inline: 13px;
+    grid-template-columns: 1fr 1.05fr;
+  }
+  .measure-app.public-design .section-heading h2 {
+    line-height: 1.32;
+    margin-top: 18px;
+  }
+  .measure-app.public-design .method-grid {
+    margin-top: 30px;
+  }
+  .measure-app.public-design .method-card {
+    padding-bottom: 26px;
+  }
+  .measure-app.public-design .method-card :is(h3, p) {
+    letter-spacing: 0;
+  }
+  .measure-app.public-design .method-card h3 {
+    font-size: 25px;
+  }
+  .measure-app.public-design .method-card .public-illustration {
+    height: 247px;
+    margin-bottom: 2px;
+  }
+  .measure-app.public-design .help-heading {
+    min-height: 169px;
+    padding-bottom: 22px;
+  }
+  .measure-app.public-design .help-heading h1 {
+    font-size: 48px;
+    margin-top: 9px;
+  }
+  .measure-app.public-design .start-card {
+    min-height: 259px;
+    padding: 15px 29px;
+  }
+  .measure-app.public-design .start-steps {
+    margin: 18px 10px 20px;
+    gap: 24px;
+  }
+  .measure-app.public-design .start-steps li {
+    gap: 20px;
+    padding-right: 5px;
+  }
+  .measure-app.public-design .start-steps p {
+    max-width: 195px;
+  }
+  .measure-app.public-design .start-bottom {
+    padding-top: 3px;
+  }
+  .measure-app.public-design .help-basics {
+    margin-top: 14px;
+  }
+  .measure-app.public-design .help-basics > .help-card {
+    min-height: 424px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .measure-app.public-design .numbered-rules {
+    gap: 5px;
+  }
+  .measure-app.public-design .rules-card hr {
+    margin: 15px 0;
+  }
+  .measure-app.public-design .help-intro {
+    min-height: 949px;
+  }
+  .measure-app.public-design .help-intro .section-signature {
+    margin: 21px 0 17px;
+  }
+  .measure-app.public-design .support-section {
+    padding-top: 9px;
+    min-height: 890px;
+  }
+  .measure-app.public-design .support-heading {
+    padding-bottom: 16px;
+  }
+  .measure-app.public-design .support-heading h2 {
+    font-size: 50px;
+    margin-top: 9px;
+    letter-spacing: 0;
+    line-height: 1.35;
+  }
+  .measure-app.public-design .contact-strip {
+    min-height: 92px;
+    padding: 13px 30px;
+  }
+  .measure-app.public-design .support-card {
+    min-height: 174px;
+    padding: 16px 23px;
+  }
+  .measure-app.public-design .support-grid > .support-card:nth-child(-n + 2) {
+    min-height: 216px;
+  }
+  .measure-app.public-design .support-grid > .support-card:nth-child(n + 5) {
+    min-height: 189px;
+  }
+  .measure-app.public-design .support-card h3 {
+    margin-bottom: 10px;
+  }
+  .measure-app.public-design .guide-art {
+    width: 420px;
+    right: 12px;
+    top: -3px;
+    opacity: 0.9;
+  }
+  .measure-app.public-design .guide-art .public-illustration {
+    height: 195px;
+    width: 280px;
+  }
+  .measure-app.public-design .guide-art > span {
+    right: 21px;
+    bottom: 26px;
+    line-height: 1.7;
+    letter-spacing: 2px;
+  }
+}
+.measure-app.public-design .help-heading {
+  padding-top: 11px;
+}
+.measure-app.public-design .start-card {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.measure-app.public-design .start-steps {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  gap: 18px;
+}
+.measure-app.public-design header.public-toolbar {
+  position: sticky;
+  top: 0;
+  height: 91px;
+  background: #f5fcfee8;
+  backdrop-filter: blur(12px);
+}
+.measure-app.public-design header.public-toolbar .measure-brand > span {
+  font-size: 26px;
+}
+.measure-app.public-design header.public-toolbar .measure-brand small {
+  font-size: 15px;
+}
+.measure-app.public-design header.public-toolbar nav {
+  font-size: 16px;
+}
+.measure-app.public-design #method,
+.measure-app.public-design #support {
+  scroll-margin-top: 91px;
+}
+.measure-app.public-design .method {
+  min-height: calc(100vh - 200px);
+}
+.measure-app.public-design {
+  --public-ink: #082b43;
+  --public-teal: #007f9c;
+  --public-copy: #50708f;
+  --public-line: #cfedf7;
+  color: var(--public-ink);
+  background:
+    radial-gradient(ellipse at 0 36%, #c9f1fa90, transparent 43%),
+    radial-gradient(ellipse at 95% 50%, #d8f5fc, transparent 49%), #f6fcfe;
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+.measure-app.public-design::before,
+.measure-app.public-design::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: 150%;
+  height: 1050px;
+  left: -25%;
+  top: -220px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: rotate(24deg);
+  box-shadow:
+    0 50px 0 #ffffff6b,
+    0 160px 0 #ffffff66,
+    0 210px 0 #c8f2fa3b;
+}
+.measure-app.public-design::after {
+  top: 880px;
+  transform: rotate(-21deg);
+  height: 900px;
+  opacity: 0.8;
+}
+.measure-app.public-design .shell {
+  width: calc(100% - 13%);
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.measure-app.public-design .public-toolbar {
+  height: 91px;
+  border-bottom: 1px solid var(--public-line);
+  position: relative;
+  z-index: 5;
+}
+.measure-app.public-design .measure-brand {
+  gap: 18px;
+  margin-left: 45px;
+  color: var(--public-teal);
+}
+.measure-app.public-design .measure-brand > span {
+  font-size: 26px;
+  letter-spacing: -0.8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+}
+.measure-app.public-design .measure-brand small {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: var(--public-copy);
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+.measure-app.public-design .measure-brand .brand-mark {
+  width: 48px;
+  height: 48px;
+}
+.measure-app.public-design .public-toolbar nav {
+  gap: 34px;
+  color: var(--public-ink);
+  font-size: 16px;
+  margin-right: 40px;
+}
+.measure-app.public-design .public-toolbar nav > a:not(.primary-button) {
+  position: relative;
+  padding-block: 18px;
+}
+.measure-app.public-design .public-active {
+  color: var(--public-teal);
+  font-weight: 700;
+}
+.measure-app.public-design .public-active::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #0089a7;
+  border-radius: 3px;
+}
+.measure-app.public-design .primary-button {
+  background: linear-gradient(115deg, #0087a3, #007c94);
+  color: #fff;
+  border: 1px solid #007e99;
+  border-radius: 10px;
+  min-height: 48px;
+  padding: 12px 26px;
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  box-shadow: inset 0 0 14px #ffffff0c;
+}
+.measure-app.public-design .secondary-button {
+  background: #ffffffbb;
+  border: 1px solid #bed9e8;
+  color: var(--public-ink);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  font-weight: 700;
+}
+.measure-app.public-design .primary-button:hover {
+  background: #006b85;
+}
+.measure-app.public-design .secondary-button:hover {
+  background: #e9f8fc;
+}
+.measure-app.public-design :is(a, button):focus-visible {
+  outline: 3px solid #009ebc;
+  outline-offset: 5px;
+}
+.measure-app.public-design .eyebrow {
+  color: #007e9e;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.measure-app.public-design .eyebrow::before {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background: #0085a2;
+}
+.measure-app.public-design .public-footer {
+  padding: 26px 0 32px;
+  border-color: #b8e0ef;
+  color: #52779c;
+  font-size: 14px;
+  max-width: 1330px;
+}
+.public-menu-toggle {
+  display: none !important;
+}
+@media (min-width: 1800px) {
+  .measure-app.public-design .shell {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 1100px) {
+  .measure-app.public-design .shell {
+    width: calc(100% - 64px);
+  }
+  .measure-app.public-design .measure-brand {
+    margin-left: 0;
+  }
+  .measure-app.public-design .public-toolbar nav {
+    margin-right: 0;
+    gap: 20px;
+  }
+}
+@media (max-width: 959px) {
+  .measure-app.public-design header.public-toolbar {
+    height: 80px;
+  }
+  .measure-app.public-design header.public-toolbar .measure-brand > span {
+    font-size: 22px;
+  }
+  .measure-app.public-design header.public-toolbar .measure-brand small {
+    font-size: 12px;
+  }
+  .measure-app.public-design #method,
+  .measure-app.public-design #support {
+    scroll-margin-top: 80px;
+  }
+  .public-menu-toggle {
+    display: inline-flex !important;
+  }
+  .measure-app.public-design .public-toolbar nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    background: #f7fdff;
+    border: 1px solid #c4e6ef;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 12px 30px #16425515;
+  }
+  .measure-app.public-design .public-toolbar nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .measure-app.public-design .public-toolbar nav > a:not(.primary-button) {
+    display: block;
+    padding: 12px;
+  }
+  .measure-app.public-design .public-active::after {
+    bottom: 2px;
+  }
+  .measure-app.public-design .public-toolbar {
+    height: 80px;
+  }
+  .measure-app.public-design .public-toolbar .measure-brand small {
+    display: block;
+    font-size: 12px;
+  }
+  .measure-app.public-design .public-toolbar .measure-brand > span {
+    font-size: 22px;
+  }
+}
+@media (max-width: 560px) {
+  .measure-app.public-design header.public-toolbar .measure-brand > span {
+    font-size: 20px;
+  }
+  .measure-app.public-design .shell {
+    width: calc(100% - 36px);
+  }
+  .measure-app.public-design .measure-brand {
+    gap: 10px;
+  }
+  .measure-app.public-design .measure-brand .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+  .measure-app.public-design .public-footer {
+    font-size: 12px;
+  }
+  .measure-app.public-design .eyebrow {
+    letter-spacing: 1.5px;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .measure-app.public-design * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+/* One shared public frame: about, help and both login roles. */
+.measure-app.public-design {
+  --public-frame-width: min(1400px, calc(100% - 80px));
+}
+.measure-app.public-design .shell,
+.measure-app.public-design .hero.shell,
+.measure-app.public-design .help-page .help-intro.shell,
+.measure-app.public-design .help-page .support-section.shell,
+.measure-app.public-design .auth-page.shell {
+  width: var(--public-frame-width);
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.measure-app.public-design header.public-toolbar,
+.measure-app.public-design:has(.help-page) header.public-toolbar {
+  height: 90px;
+  border-bottom: 1px solid var(--public-line);
+}
+.measure-app.public-design header.public-toolbar .measure-brand {
+  margin-left: 0;
+}
+.measure-app.public-design header.public-toolbar .measure-brand > span,
+.measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand > span {
+  font-size: 26px;
+}
+.measure-app.public-design header.public-toolbar .measure-brand small,
+.measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand small {
+  font-size: 14px;
+}
+.measure-app.public-design header.public-toolbar nav,
+.measure-app.public-design:has(.help-page) header.public-toolbar nav,
+.measure-app.public-design:not(:has(.help-page)) header.public-toolbar nav {
+  transform: none;
+  margin-right: 0;
+  gap: 32px;
+  font-size: 16px;
+}
+.measure-app.public-design header.public-toolbar .primary-button,
+.measure-app.public-design:has(.help-page) header.public-toolbar .primary-button {
+  font-size: 16px;
+  min-height: 46px;
+  padding: 10px 24px;
+}
+.measure-app.public-design .auth-page.shell {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+  gap: clamp(32px, 5vw, 80px);
+  padding-block: 40px;
+  min-height: calc(100dvh - 170px);
+}
+.measure-app.public-design .auth-page.compact-login {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
+  justify-content: center;
+  align-items: start;
+  column-gap: clamp(32px, 8vw, 126px);
+  row-gap: 36px;
+  padding: 66px 26px 0 56px;
+}
+.measure-app.public-design:has(.compact-login) .public-footer {
+  justify-content: center;
+  border-top: 0;
+  padding-top: 0;
+}
+.measure-app.public-design:has(.compact-login) .public-footer > :last-child {
+  display: none;
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .measure-app.public-design .auth-page.compact-login {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 440px);
+    column-gap: 32px;
+    padding: 48px 0 0;
+  }
+  .auth-page.compact-login .calibration-board h1 {
+    font-size: 36px;
+  }
+  .auth-page.compact-login .calibration-board > .login-intro {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .measure-app.public-design {
+    --public-frame-width: calc(100% - 40px);
+  }
+  .measure-app.public-design .auth-page.shell {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+  }
+  .measure-app.public-design .auth-page.compact-login {
+    grid-template-columns: minmax(0, 540px);
+    padding: 32px 0 0;
+  }
+  .auth-page.compact-login .calibration-board {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .measure-app.public-design {
+    --public-frame-width: calc(100% - 32px);
+  }
+  .measure-app.public-design .auth-page.shell {
+    grid-template-columns: 1fr;
+    padding-block: 24px;
+  }
+  .measure-app.public-design .auth-page.compact-login {
+    grid-template-columns: minmax(0, 540px);
+    min-height: calc(100dvh - 170px);
+    padding: 24px 0 0;
+  }
+  .measure-app.public-design header.public-toolbar,
+  .measure-app.public-design:has(.help-page) header.public-toolbar {
+    height: 76px;
+  }
+  .measure-app.public-design header.public-toolbar .measure-brand > span,
+  .measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand > span {
+    font-size: 22px;
+  }
+  .measure-app.public-design header.public-toolbar .measure-brand small,
+  .measure-app.public-design:has(.help-page) header.public-toolbar .measure-brand small {
+    font-size: 11px;
+  }
+}

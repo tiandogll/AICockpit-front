@@ -1,0 +1,84 @@
+/* Isolated mobile profile presentation. Desktop and shared business styles stay untouched. */
+.mobile-account-redesign { padding: 24px 18px 8px; color: #173b41; }
+.mobile-account-redesign :is(h1, h2, p) { margin: 0; }
+.mobile-account-redesign button { font-family: inherit; }
+.acct-person { display: flex; gap: 14px; align-items: center; margin-bottom: 22px; min-width: 0; }
+.acct-avatar { width: 58px; height: 58px; flex: none; display: grid; place-items: center; position: relative; border-radius: 19px; background: #dceee7; color: #087f82; font-size: 26px; font-weight: 700; border: 3px solid #fff; box-shadow: 0 3px 13px #0c786410; }
+.acct-avatar i { position: absolute; right: -1px; bottom: 0; width: 12px; height: 12px; border: 3px solid #f4f8f7; border-radius: 50%; background: #087f82; }
+.acct-person-copy { min-width: 0; flex: 1; }
+.acct-welcome { display: block; font-size: 12px; color: #738984; margin-bottom: 4px; }
+.mobile-account-redesign .acct-person h1 { font-size: 23px; line-height: 1.35; letter-spacing: -.6px; font-weight: 700; overflow-wrap: anywhere; }
+.acct-person-copy > p { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; font-size: 12px; line-height: 1.6; color: #748b88; margin-top: 4px; overflow-wrap: anywhere; }
+.acct-person-copy > p > span { display: inline-flex; gap: 3px; align-items: center; color: #087f82; font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #e4f1eb; }
+.acct-edit { width: 35px; height: 35px; padding: 0; flex: none; display: grid; place-items: center; border: 1px solid #dfeae6; background: #fff; color: #526f6b; border-radius: 12px; }
+.acct-passport { position: relative; overflow: hidden; border-radius: 22px; padding: 21px 20px 0; background: #173b41; color: #fff; isolation: isolate; box-shadow: 0 9px 26px #173b4112; }
+.acct-passport::after { content: ''; z-index: -1; width: 175px; height: 175px; border-radius: 50%; border: 1px solid #8bb7a819; position: absolute; right: -72px; top: -74px; box-shadow: 0 0 0 24px #a0cdb007, 0 0 0 48px #a0cdb007; pointer-events: none; }
+.acct-passport-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.acct-eyebrow { display: flex; align-items: center; gap: 6px; color: #bcd9cc; font-size: 12px; font-weight: 500; }
+.acct-eyebrow > svg { color: #a8c9ba; }
+.acct-record-label { padding: 3px 7px; border: 1px solid #b5d3bc33; border-radius: 5px; color: #c7d7c7; font-size: 10px; letter-spacing: .6px; }
+.mobile-account-redesign .acct-passport h2 { font-size: 21px; line-height: 1.5; letter-spacing: -.6px; color: #fff; margin-top: 13px; }
+.mobile-account-redesign .acct-passport-note { color: #aec6c3; font-size: 12px; line-height: 1.75; margin-top: 4px; }
+.acct-passport-stats { display: grid; grid-template-columns: 1fr 1fr 1.15fr; gap: 12px; margin: 22px 0 17px; }
+.acct-passport-stats > a { position: relative; display: flex; flex-direction: column; min-width: 0; color: inherit; text-decoration: none; border-right: 1px solid #c8e1d119; }
+.acct-passport-stats > a:last-child { border-right: 0; }
+.acct-passport-stats strong { font: 500 31px/1.1 Outfit, sans-serif; letter-spacing: -.8px; color: #fff; font-variant-numeric: tabular-nums; }
+.acct-passport-stats strong > small { color: #b6d0c7; font-size: 11px; margin-left: 4px; font-family: 'Microsoft YaHei UI', sans-serif; font-weight: 400; letter-spacing: 0; }
+.acct-passport-stats span { color: #c3d6cf; font-size: 11px; margin-top: 7px; line-height: 1.6; }
+.acct-passport-stats > a > svg { position: absolute; right: 11px; bottom: 2px; color: #86a99a; opacity: .5; }
+.acct-passport-stats > a:last-child > svg { right: 0; color: #d5bb7d; }
+.acct-passport-foot { margin: 0 -20px; padding: 12px 20px; background: #0a272330; border-top: 1px solid #c1d6ce12; display: flex; align-items: center; gap: 8px; font-size: 10px; color: #a6c4b8; }
+.acct-six-dots { display: flex; gap: 3px; flex: none; }
+.acct-six-dots i { width: 4px; height: 9px; border-radius: 2px; background: #6a928555; }
+.acct-six-dots .filled { background: #c8b67c; }
+.acct-load-notice { display: flex; align-items: center; gap: 10px; font-size: 12px; padding: 12px; background: #fff4de; color: #8c6727; border-radius: 12px; margin-top: 12px; line-height: 1.6; }
+.acct-load-notice > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.acct-load-notice button { flex: none; padding: 6px 10px; border-radius: 8px; border: 1px solid #ead9b7; background: #fffbf4; color: #8c6727; font-size: 12px; }
+.acct-moment { margin-top: 14px; }
+.acct-next-card { display: flex; align-items: center; gap: 11px; padding: 17px 15px; background: #edf5f1; border: 1px solid #dceae4; border-radius: 17px; color: #173b41; text-decoration: none; }
+.acct-next-icon { width: 42px; height: 46px; display: grid; place-items: center; flex: none; background: #fff; color: #087f82; border-radius: 13px; }
+.acct-next-card > div { flex: 1; min-width: 0; }
+.acct-next-card small { display: block; color: #5f8279; font-size: 11px; line-height: 1.65; }
+.acct-next-card strong { display: block; font-size: 14px; font-weight: 650; line-height: 1.65; overflow-wrap: anywhere; margin-top: 3px; }
+.mobile-account-redesign .acct-next-card p { color: #7a938c; font-size: 11px; line-height: 1.7; margin-top: 3px; }
+.acct-next-card > svg { flex: none; color: #528e7d; }
+.acct-shortcuts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.acct-shortcuts > a { position: relative; display: flex; flex-direction: column; padding: 16px; background: #fff; border: 1px solid #e6eeeb; border-radius: 17px; color: #173b41; text-decoration: none; min-width: 0; }
+.acct-shortcut-icon { width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; background: #eaf3f4; color: #358894; margin-bottom: 11px; }
+.acct-shortcut-icon.warm { background: #f6f1e5; color: #9c8240; }
+.acct-shortcuts strong { font-size: 14px; font-weight: 650; line-height: 1.6; }
+.acct-shortcuts small { display: block; font-size: 11px; line-height: 1.75; color: #788e86; margin-top: 3px; }
+.acct-shortcuts > a > svg { position: absolute; right: 13px; top: 24px; color: #9eafa8; }
+.acct-goal { display: flex; gap: 10px; align-items: start; padding: 16px; border-radius: 15px; margin-top: 16px; background: #f1f5ed; border: 1px solid #e5eadc; color: #597957; }
+.acct-goal > svg { flex: none; margin-top: 2px; }
+.acct-goal > div { flex: 1; min-width: 0; }
+.acct-goal small { font-size: 11px; color: #7b9273; }
+.mobile-account-redesign .acct-goal p { margin-top: 5px; font-size: 13px; line-height: 1.75; color: #426144; overflow-wrap: anywhere; white-space: pre-wrap; }
+.acct-goal button { flex: none; background: none; border: 0; padding: 2px; color: #839678; }
+.acct-settings { margin-top: 25px; }
+.mobile-account-redesign .acct-settings > h2 { display: flex; align-items: center; gap: 10px; padding: 0 3px; font-size: 14px; font-weight: 650; margin-bottom: 12px; }
+.acct-settings > h2 > span { font: 400 9px/1.5 Outfit, sans-serif; letter-spacing: 1.4px; color: #879d96; }
+.acct-settings-list { padding: 2px 15px; border: 1px solid #e6eeeb; border-radius: 18px; background: #fff; }
+.acct-settings-list > :is(button, a) { width: 100%; display: flex; align-items: center; gap: 11px; padding: 16px 0; border: 0; border-bottom: 1px solid #edf2ef; color: #173b41; background: none; text-align: left; text-decoration: none; }
+.acct-settings-list > :last-child { border-bottom: 0; }
+.acct-setting-icon { width: 34px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: #eff7f2; color: #35927d; flex: none; }
+.acct-setting-icon.blue { background: #eef4f8; color: #64859d; }
+.acct-setting-icon.warm { background: #f8f5eb; color: #9c8240; }
+.acct-settings-list > :is(button, a) > div { flex: 1; min-width: 0; }
+.acct-settings-list strong { display: block; font-size: 13px; font-weight: 600; line-height: 1.6; }
+.acct-settings-list small { display: block; font-size: 11px; line-height: 1.7; color: #879c93; margin-top: 3px; }
+.acct-settings-list > :is(button, a) > svg { color: #a8b9b1; flex: none; }
+.mobile-account-redesign .acct-privacy { display: flex; align-items: start; justify-content: center; gap: 7px; padding: 23px 10px 18px; color: #7d958a; font-size: 11px; line-height: 1.7; }
+.acct-privacy > svg { flex: none; margin-top: 2px; color: #6f9585; }
+.acct-logout { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 45px; border: 1px solid #dde8e1; border-radius: 13px; background: transparent; color: #648274; font-size: 13px; }
+.mobile-account-redesign :is(a, button):focus-visible { outline: 2px solid #087f82; outline-offset: 3px; }
+.acct-passport a:focus-visible { outline-color: #d6eadc; }
+@media (max-width: 370px) {
+  .mobile-account-redesign { padding-left: 14px; padding-right: 14px; }
+  .acct-person { gap: 11px; }
+  .acct-passport { padding-left: 17px; padding-right: 17px; }
+  .acct-passport-foot { margin-left: -17px; margin-right: -17px; padding-left: 17px; padding-right: 17px; }
+  .acct-passport-stats { gap: 10px; }
+  .acct-passport-stats > a > svg { display: none; }
+  .acct-shortcuts > a { padding: 14px; }
+}

@@ -1,0 +1,846 @@
+/* Mobile training only. The desktop views and their business behavior stay intact. */
+.mobile-app.mobile-page-training .training-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  font-size: var(--compact-body, 13px);
+}
+
+.mobile-app.mobile-page-training .training-page > * {
+  grid-column: 1 / -1;
+}
+
+/* One heading/tool row instead of a stack of desktop heading, tools and navigation. */
+.mobile-app.mobile-page-training .training-page > .page-heading {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 8px !important;
+  margin-bottom: 4px !important;
+  align-items: center;
+}
+
+.mobile-app.mobile-page-training .page-heading > div {
+  display: contents;
+}
+
+.mobile-app.mobile-page-training .page-heading .kicker,
+.mobile-app.mobile-page-training .today-panel > .overline {
+  display: none !important;
+}
+
+.mobile-app.mobile-page-training .page-heading h1 {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 18px !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.mobile-app.mobile-page-training .page-heading > a {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  padding: 8px 10px !important;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.mobile-app.mobile-page-training .page-heading > div > p:last-child {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin: 0;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+
+.mobile-app.mobile-page-training .training-page:has(> [data-testid='return-to-training']) > .training-tabs {
+  grid-column: 1;
+  grid-row: 2;
+  margin-right: 6px !important;
+}
+
+.mobile-app.mobile-page-training .training-page > [data-testid='return-to-training'] {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  margin-top: 4px;
+  padding: 8px 6px !important;
+  gap: 2px;
+  border-color: transparent;
+  background: transparent;
+  white-space: nowrap;
+  font-size: 12px !important;
+}
+
+.mobile-app.mobile-page-training :is(.training-layout, .overview-columns, .library-layout) {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: var(--compact-gap, 12px) !important;
+}
+
+.mobile-app.mobile-page-training :is(.plan-rail, .plan-detail, .overview-side) {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: var(--compact-gap, 12px) !important;
+  min-width: 0;
+}
+
+.mobile-app.mobile-page-training :is(.panel, .overview-panel, .library-card) {
+  padding: var(--compact-pad, 14px) !important;
+  border-radius: var(--compact-radius, 14px) !important;
+}
+
+.mobile-app.mobile-page-training :is(.panel, .overview-panel) :is(h2, h3) {
+  font-size: var(--compact-title, 16px) !important;
+  line-height: 1.45 !important;
+}
+
+.mobile-app.mobile-page-training :is(.panel, .overview-panel) p {
+  font-size: var(--compact-body, 13px) !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training .training-tabs {
+  gap: 4px !important;
+  margin: 4px 0 10px !important;
+  flex-wrap: nowrap;
+}
+
+.mobile-app.mobile-page-training .training-tabs a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px !important;
+  font-size: 12px !important;
+  white-space: nowrap;
+}
+
+.mobile-app.mobile-page-training :is(.boundary-note, .revision-warning, .origin-notice, .feedback) {
+  padding: 10px 12px !important;
+  margin-top: 10px !important;
+  margin-bottom: 12px !important;
+  font-size: 12px !important;
+  line-height: 1.65 !important;
+  border-radius: 10px !important;
+}
+
+.mobile-app.mobile-page-training .boundary-note p {
+  margin: 0;
+  font-size: 12px !important;
+  line-height: 1.65 !important;
+}
+
+.mobile-app.mobile-page-training .service-note {
+  gap: 10px;
+  align-items: flex-start;
+  padding: var(--compact-pad, 14px) !important;
+}
+
+.mobile-app.mobile-page-training .service-note h2 {
+  font-size: 16px;
+}
+
+.mobile-app.mobile-page-training .service-note p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.mobile-app.mobile-page-training .state-panel {
+  min-height: 0 !important;
+  padding: 18px 14px !important;
+  gap: 10px;
+}
+
+.mobile-app.mobile-page-training :is(.action-button, .quiet-button, .overview-primary, .overview-secondary, .review-next, .study-done) {
+  min-height: 44px !important;
+  padding: 9px 12px !important;
+  font-size: 13px !important;
+  line-height: 1.5;
+  border-radius: 10px !important;
+}
+
+.mobile-app.mobile-page-training .text-link {
+  min-height: 44px;
+  line-height: 1.6;
+  font-size: 12px !important;
+}
+
+/* Catalog tiles show the direction/title/action only. The same full summary remains
+   in the method dialog; this is information layering, not clipped reading content. */
+.mobile-app.mobile-page-training .self-study > header {
+  gap: 8px;
+  margin: 8px 0 10px !important;
+}
+
+.mobile-app.mobile-page-training .study-label {
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .self-study h2 {
+  font-size: 16px !important;
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+.mobile-app.mobile-page-training .self-study > header p {
+  font-size: 13px !important;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mobile-app.mobile-page-training .self-study > header > svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+
+.mobile-app.mobile-page-training :is(.study-grid, .library-grid, .learning-library) {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+}
+
+.mobile-app.mobile-page-training .study-grid article {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  min-height: 132px;
+  min-width: 0;
+  background: #fff;
+}
+
+.mobile-app.mobile-page-training .study-grid article > p {
+  display: none;
+}
+
+.mobile-app.mobile-page-training .study-grid article > span {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mobile-app.mobile-page-training :is(.study-grid, .library-card) h3 {
+  font-size: 14px !important;
+  line-height: 1.45;
+  margin: 4px 0 8px;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.mobile-app.mobile-page-training :is(.study-grid, .library-card) p {
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.mobile-app.mobile-page-training :is(.study-grid, .library-card) button {
+  min-height: 44px;
+  padding: 8px;
+  gap: 5px;
+  font-size: 12px !important;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+.mobile-app.mobile-page-training .self-study .study-boundary {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 12px 0;
+}
+
+/* Report-driven generation: keep evidence and eligibility beside their controls. */
+.mobile-app.mobile-page-training .create-panel > p {
+  margin-top: 8px;
+}
+
+.mobile-app.mobile-page-training .field {
+  margin-top: 12px;
+  gap: 6px;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+.mobile-app.mobile-page-training .field select {
+  min-height: 44px;
+  padding: 9px 11px;
+}
+
+.mobile-app.mobile-page-training .field textarea {
+  min-height: 112px;
+  padding: 10px 11px;
+  line-height: 1.65;
+}
+
+.mobile-app.mobile-page-training :is(.small-note, .provenance, .retest-note, .eligibility-note) {
+  font-size: 12px !important;
+  line-height: 1.65 !important;
+  margin-top: 8px;
+}
+
+.mobile-app.mobile-page-training .eligibility-note {
+  padding: 10px;
+}
+
+.mobile-app.mobile-page-training .confirmation {
+  min-height: 44px;
+  margin-top: 10px;
+  align-items: flex-start;
+  line-height: 1.65;
+  font-size: 12px !important;
+}
+
+.mobile-app.mobile-page-training .create-panel > .action-button {
+  margin-top: 12px;
+}
+
+.mobile-app.mobile-page-training .saved-plans > header {
+  margin-bottom: 10px;
+}
+
+.mobile-app.mobile-page-training .plan-button {
+  padding: 10px 12px;
+  margin-top: 8px;
+  min-height: 44px;
+}
+
+.mobile-app.mobile-page-training .plan-button strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.mobile-app.mobile-page-training .plan-button :is(span, small) {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.mobile-app.mobile-page-training .personal-empty h2 {
+  margin: 6px 0 8px;
+}
+
+.mobile-app.mobile-page-training .personal-empty ol {
+  margin: 12px 0;
+}
+
+.mobile-app.mobile-page-training .personal-empty li {
+  gap: 4px;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.mobile-app.mobile-page-training .personal-empty li span {
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.mobile-app.mobile-page-training .personal-empty .text-link {
+  margin-top: 8px;
+}
+
+.mobile-app.mobile-page-training .no-reports {
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Saved progress is a real sequence, expressed as a compact two-column path. */
+.mobile-app.mobile-page-training .training-overview {
+  margin: 8px 0 10px;
+}
+
+.mobile-app.mobile-page-training .target-band {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 8px !important;
+  padding: 12px !important;
+  border-radius: var(--compact-radius, 14px) !important;
+}
+
+.mobile-app.mobile-page-training .target-copy {
+  padding: 0;
+  border: 0;
+}
+
+.mobile-app.mobile-page-training .target-copy h2 {
+  font-size: 17px !important;
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+.mobile-app.mobile-page-training .target-copy p {
+  font-size: 13px !important;
+  line-height: 1.6;
+  margin: 4px 0 0;
+}
+
+.mobile-app.mobile-page-training .target-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.mobile-app.mobile-page-training .target-meta strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px;
+  font-size: 14px;
+  line-height: 1.45;
+  padding-right: 6px;
+  min-width: 0;
+}
+
+.mobile-app.mobile-page-training .target-meta small {
+  display: inline;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mobile-app.mobile-page-training .target-road {
+  padding: 0;
+}
+
+.mobile-app.mobile-page-training .road-progress {
+  margin: 0 0 8px;
+  gap: 7px;
+}
+
+.mobile-app.mobile-page-training .road-progress > span {
+  flex-direction: row;
+  gap: 3px;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .road-progress b {
+  font-size: 14px;
+}
+
+.mobile-app.mobile-page-training .road-stages {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.mobile-app.mobile-page-training .road-stages button {
+  padding: 7px 5px;
+  min-height: 72px;
+  min-width: 0;
+}
+
+.mobile-app.mobile-page-training .road-stages strong {
+  font-size: 12px !important;
+  line-height: 1.4;
+}
+
+.mobile-app.mobile-page-training .road-stages :is(small, span) {
+  font-size: 11px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.mobile-app.mobile-page-training .road-stages svg {
+  width: 12px;
+  height: 12px;
+  right: 4px;
+  top: 7px;
+}
+
+.mobile-app.mobile-page-training .overview-columns {
+  margin-top: 12px;
+}
+
+.mobile-app.mobile-page-training .today-task {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 6px 8px;
+  padding: 10px;
+  margin: 8px 0 10px;
+  align-items: flex-start;
+}
+
+.mobile-app.mobile-page-training .task-no {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.mobile-app.mobile-page-training .today-task h3 {
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  margin: 3px 0;
+}
+
+.mobile-app.mobile-page-training .today-task p {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  margin: 4px 0;
+}
+
+.mobile-app.mobile-page-training .today-task small {
+  font-size: 12px !important;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.mobile-app.mobile-page-training .today-task button {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.mobile-app.mobile-page-training .overview-empty {
+  padding: 12px 0;
+}
+
+.mobile-app.mobile-page-training .task-list-heading {
+  margin: 8px 0;
+  align-items: center;
+}
+
+.mobile-app.mobile-page-training .task-list-heading h3 {
+  font-size: 15px !important;
+}
+
+.mobile-app.mobile-page-training .task-list-heading span {
+  font-size: 12px !important;
+}
+
+.mobile-app.mobile-page-training .overview-task-row {
+  gap: 8px;
+  padding: 6px 0 !important;
+}
+
+.mobile-app.mobile-page-training .overview-task-row > div {
+  min-width: 0;
+}
+
+.mobile-app.mobile-page-training .task-state {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .overview-task-row strong {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.mobile-app.mobile-page-training .overview-task-row small {
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 2px;
+}
+
+.mobile-app.mobile-page-training .overview-task-row button {
+  min-height: 44px;
+  min-width: 44px;
+  flex: none;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.mobile-app.mobile-page-training .overview-side a {
+  min-height: 44px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .basis-row {
+  padding: 9px 0;
+}
+
+.mobile-app.mobile-page-training .basis-row > div {
+  font-size: 13px;
+}
+
+.mobile-app.mobile-page-training .basis-row strong {
+  font-size: 16px;
+}
+
+.mobile-app.mobile-page-training .basis-row small {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.mobile-app.mobile-page-training .overview-side .completion-value {
+  font-size: 24px !important;
+  margin: 8px 0;
+  line-height: 1.3 !important;
+}
+
+.mobile-app.mobile-page-training .completion-value small {
+  font-size: 13px;
+}
+
+.mobile-app.mobile-page-training .plan-summary > header {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.mobile-app.mobile-page-training .plan-summary h2 {
+  margin-top: 5px;
+}
+
+.mobile-app.mobile-page-training .plan-meta {
+  margin-top: 10px;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .provenance {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.mobile-app.mobile-page-training .generation-basis {
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.mobile-app.mobile-page-training .generation-basis h3 {
+  font-size: 14px !important;
+  margin-bottom: 8px;
+}
+
+.mobile-app.mobile-page-training .basis-target {
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.mobile-app.mobile-page-training .task-panel {
+  scroll-margin-top: 14px;
+}
+
+.mobile-app.mobile-page-training .task-panel h2 {
+  margin-top: 4px;
+}
+
+.mobile-app.mobile-page-training .task-panel form > .action-button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Reading and task review stay full-length, with smaller chrome rather than scaled text. */
+.mobile-app.mobile-page-training :is(.training-lessons, .lesson-actions, .case-comparison) {
+  gap: 12px;
+}
+
+.mobile-app.mobile-page-training .lesson-actions {
+  grid-template-columns: minmax(0, 1fr);
+  padding: 14px;
+}
+
+.mobile-app.mobile-page-training .lesson-heading {
+  padding: 12px 14px;
+}
+
+.mobile-app.mobile-page-training .lesson-heading h3 {
+  font-size: 16px !important;
+  margin: 4px 0 6px;
+}
+
+.mobile-app.mobile-page-training .lesson-heading span {
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .lesson p,
+.mobile-app.mobile-page-training .lesson li {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training .lesson-reading {
+  padding: 0 14px 8px;
+}
+
+.mobile-app.mobile-page-training .lesson-reading p {
+  margin: 10px 0;
+}
+
+.mobile-app.mobile-page-training .worked-case {
+  margin: 0 14px 12px;
+  padding-top: 12px;
+}
+
+.mobile-app.mobile-page-training .lesson h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mobile-app.mobile-page-training .worked-case h4 small {
+  margin: 4px 0 0;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .case-comparison > div {
+  padding: 12px;
+}
+
+.mobile-app.mobile-page-training .case-comparison strong {
+  font-size: 13px;
+}
+
+.mobile-app.mobile-page-training .lesson-actions li + li {
+  margin-top: 6px;
+}
+
+.mobile-app.mobile-page-training :is(.task-instructions, .instructions) {
+  margin: 8px 0 12px;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training :is(.original-material, .practice-brief, .saved-response, .saved-feedback) {
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.mobile-app.mobile-page-training :is(.training-task-content, .task-review) h3 {
+  font-size: 15px !important;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.mobile-app.mobile-page-training :is(.original-material, .practice-brief, .saved-response, .saved-feedback) p {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training .practice-checks {
+  margin: 12px 0;
+}
+
+.mobile-app.mobile-page-training .practice-checks ul {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.mobile-app.mobile-page-training .practice-checks li + li {
+  margin-top: 6px;
+}
+
+.mobile-app.mobile-page-training .record-meta {
+  margin: 12px 0 10px;
+  padding-top: 12px;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .next-step {
+  padding: 12px;
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training :is(.training-supplement, .supplemental-reading) {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.mobile-app.mobile-page-training :is(.training-supplement, .supplemental-reading, .completed-records) summary {
+  min-height: 44px;
+  padding: 9px 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.mobile-app.mobile-page-training .completed-panel {
+  gap: 10px;
+}
+
+.mobile-app.mobile-page-training .complete-mark {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-app.mobile-page-training .completed-records details {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.mobile-app.mobile-page-training .comparison-panel table {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.mobile-app.mobile-page-training .comparison-panel :is(th, td) {
+  padding: 8px 4px;
+}
+
+.mobile-app.mobile-page-training :is(.study-dialog, .training-review-dialog, .library-dialog) {
+  width: calc(100vw - 24px) !important;
+  max-height: calc(100dvh - 32px) !important;
+  border-radius: 16px !important;
+}
+
+.mobile-app.mobile-page-training :is(.study-dialog, .training-review-dialog) > header {
+  padding: 12px 14px !important;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.mobile-app.mobile-page-training :is(.study-dialog, .training-review-dialog) header h2 {
+  font-size: 17px !important;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.mobile-app.mobile-page-training :is(.study-dialog, .training-review-dialog) > header > button {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobile-app.mobile-page-training :is(.study-dialog .study-body, .training-review-dialog .review-body) {
+  padding: 12px 14px 14px !important;
+}
+
+.mobile-app.mobile-page-training :is(.study-body, .review-body) p,
+.mobile-app.mobile-page-training :is(.study-body, .review-body) li {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.mobile-app.mobile-page-training .study-body > p:first-child,
+.mobile-app.mobile-page-training .review-body > p:first-child {
+  margin-top: 0;
+}
+
+.mobile-app.mobile-page-training :is(.study-example, .study-check) {
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+}
+
+.mobile-app.mobile-page-training .study-body h3 {
+  font-size: 15px !important;
+  margin-top: 12px;
+}
+
+.mobile-app.mobile-page-training .study-body li {
+  margin: 6px 0;
+}
+
+.mobile-app.mobile-page-training .study-body ol {
+  padding-left: 20px;
+}
+
+.mobile-app.mobile-page-training .study-body .study-boundary {
+  font-size: 12px !important;
+}
+
+.mobile-app.mobile-page-training :is(.study-done, .review-next) {
+  width: 100%;
+  margin-top: 12px;
+}
+
+@media (max-width: 359px) {
+  .mobile-app.mobile-page-training :is(.study-grid, .library-grid, .learning-library) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}

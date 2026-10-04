@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520" role="img" aria-labelledby="title desc">
+  <title id="title">供辨析的模拟培训成绩图</title>
+  <desc id="desc">图标题声称培训使成绩翻倍，实际培训前70分、培训后77分，纵轴从65分开始。该图刻意包含需要学员检查的问题，数据为虚构教学示例。</desc>
+  <rect width="840" height="520" rx="18" fill="#f5f8fa"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" fill="#183b46">
+    <text x="420" y="56" text-anchor="middle" font-size="28" font-weight="700">培训使成绩翻倍</text>
+    <text x="420" y="91" text-anchor="middle" font-size="16">辨析用示例图 · 非真实实验结果</text>
+    <text x="80" y="130" font-size="16">平均分</text>
+    <g stroke="#cad9de" stroke-width="1">
+      <path d="M140 400H750 M140 310H750 M140 220H750 M140 130H750"/>
+    </g>
+    <g font-size="17" text-anchor="end">
+      <text x="122" y="406">65</text><text x="122" y="316">70</text>
+      <text x="122" y="226">75</text><text x="122" y="136">80</text>
+    </g>
+    <path d="M140 130V400H750" fill="none" stroke="#5d727a" stroke-width="2"/>
+    <rect x="230" y="310" width="150" height="90" fill="#88bcc6"/>
+    <rect x="510" y="184" width="150" height="216" fill="#137f91"/>
+    <g font-size="26" font-weight="700" text-anchor="middle">
+      <text x="305" y="294">70</text><text x="585" y="168">77</text>
+    </g>
+    <g font-size="20" text-anchor="middle">
+      <text x="305" y="435">培训前</text><text x="585" y="435">培训后</text>
+    </g>
+    <text x="420" y="484" text-anchor="middle" font-size="16">请检查标题、坐标轴、变化幅度与因果结论是否有充分依据。</text>
+  </g>
+</svg>

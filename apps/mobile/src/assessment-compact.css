@@ -1,0 +1,110 @@
+/* Mobile runner styles only. The selection page owns its template and styles
+   in MobileAssessment.vue; avoid stacking legacy desktop selection overrides. */
+/* Answer controls stay comfortably tappable; only the surrounding chrome shrinks. */
+.mobile-app.mobile-page-assessment .exam-session-toolbar {
+  padding: 12px !important;
+  gap: 10px !important;
+}
+.mobile-app.mobile-page-assessment .exam-outline {
+  min-height: 44px !important;
+  padding: 8px 10px !important;
+}
+.mobile-app.mobile-page-assessment .exam-coverage {
+  padding: 10px 14px !important;
+  line-height: 1.6;
+}
+.mobile-app.mobile-page-assessment .exam-question-meta {
+  padding: 8px 14px !important;
+}
+.mobile-app.mobile-page-assessment .exam-flag {
+  min-height: 44px;
+}
+.mobile-app.mobile-page-assessment .exam-answer-body {
+  padding: 15px var(--compact-pad, 14px) !important;
+}
+.mobile-app.mobile-page-assessment .exam-objective h1,
+.mobile-app.mobile-page-assessment .exam-readonly-answer h1 {
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+}
+.mobile-app.mobile-page-assessment .exam-objective fieldset {
+  margin-top: 16px !important;
+  gap: 10px;
+}
+.mobile-app.mobile-page-assessment .exam-objective fieldset label {
+  min-height: 48px !important;
+  padding: 12px !important;
+  border-radius: 10px !important;
+  gap: 8px !important;
+}
+.mobile-app.mobile-page-assessment .exam-objective fieldset strong {
+  line-height: 1.65 !important;
+}
+.mobile-app.mobile-page-assessment .exam-answer-footer {
+  padding: 10px 14px !important;
+}
+.mobile-app.mobile-page-assessment .exam-submit,
+.mobile-app.mobile-page-assessment .exam-previous {
+  min-height: 44px !important;
+}
+.mobile-app.mobile-page-assessment .runner-terminal {
+  padding: 28px 16px !important;
+  gap: 14px;
+}
+.mobile-app.mobile-page-assessment .runner-terminal h1 {
+  font-size: 19px !important;
+  line-height: 1.5;
+}
+.mobile-app.mobile-page-assessment .runner-terminal a,
+.mobile-app.mobile-page-assessment .runner-terminal button,
+.mobile-app.mobile-page-assessment .runner-dialog button,
+.mobile-app.mobile-page-assessment .runner-dialog a {
+  min-height: 44px;
+}
+.mobile-app.mobile-page-assessment .runner-dialog {
+  padding: 20px !important;
+}
+.mobile-app.mobile-page-assessment .runner-dialog h2 {
+  font-size: 17px !important;
+}
+.mobile-app.mobile-page-assessment .runner-dialog > div {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* Keep secondary navigation as easy to tap as the answer and save controls. */
+.mobile-app.mobile-page-assessment :is(.exam-back, .exam-mobile-rail) {
+  min-height: 44px;
+}
+.mobile-app.mobile-page-assessment .exam-mobile-dialog > header > button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: none;
+  border-radius: 10px;
+  background: #eef7f4;
+  color: var(--signal-dark);
+}
+.mobile-app.mobile-page-assessment .exam-mobile-dialog .exam-question-numbers {
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 8px;
+}
+.mobile-app.mobile-page-assessment .exam-mobile-dialog .exam-question-numbers button {
+  min-height: 44px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+.mobile-app.mobile-page-assessment .exam-mobile-dialog > button {
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #eef7f4;
+  color: var(--signal-dark);
+  font-size: 13px;
+}

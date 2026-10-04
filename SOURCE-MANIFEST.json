@@ -1,0 +1,1409 @@
+{
+  "schema_version": 1,
+  "profile": "front",
+  "project": "AICockpit-front",
+  "source_commit": "b808d5ebed94c6887cb360f4615a9ead79ff2422",
+  "created_utc": "2026-10-04T07:07:19.803220+00:00",
+  "readme_source": "docs/github-split/front-README.md",
+  "scope": "PC + mobile frontend",
+  "omitted": [
+    "developer Git history",
+    "real credentials",
+    "local/runtime databases and user data",
+    "dependencies, builds, logs and private exports",
+    "monorepo CI and server deployment records",
+    "two reviewed password-literal test fixtures"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 794,
+      "sha256": "89a213c3432e71b1d49513b7ef96431673975f36738c5caf8bbdf3905c77d88b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2834,
+      "sha256": "629d608b2884b755a13f3d176c847a5c0054a65b6d56dfb117413f4e1594d8ef"
+    },
+    {
+      "path": "apps/mobile/README.md",
+      "bytes": 7149,
+      "sha256": "457decdf7a4f7375b46da43bd99cd016a6427ce2ab6cc49a69bc681704259e9f"
+    },
+    {
+      "path": "apps/mobile/env.d.ts",
+      "bytes": 62,
+      "sha256": "c3e3bd6e47b4ac1fb14173ab29ce3f9eb9df40e451779601d6df4d79b93d0b2d"
+    },
+    {
+      "path": "apps/mobile/index.html",
+      "bytes": 522,
+      "sha256": "f8e2965490ad62ae7ab6229984234c17ed0f8e7938a1c2ce9d3a0957e5520d12"
+    },
+    {
+      "path": "apps/mobile/package.json",
+      "bytes": 477,
+      "sha256": "92f7c721bf0d8874f80f2eaac99d2a2524952a3b2dd58698580aa10a0b741a23"
+    },
+    {
+      "path": "apps/mobile/src/MobileAccount.vue",
+      "bytes": 10943,
+      "sha256": "1d83f1365c92c46f21e22c6184d53b723df6fb9eac20a32f993353b8e020f31c"
+    },
+    {
+      "path": "apps/mobile/src/MobileApp.vue",
+      "bytes": 7717,
+      "sha256": "82a405d6a0d0b9c7626878ede58f8d733f665bd304b6400ef4712492dbdb63d4"
+    },
+    {
+      "path": "apps/mobile/src/MobileAssessment.vue",
+      "bytes": 32107,
+      "sha256": "789ff5c60e73d609843b24a4ea1d7230f564366c859e4772be303f23597645e5"
+    },
+    {
+      "path": "apps/mobile/src/MobileHome.vue",
+      "bytes": 9680,
+      "sha256": "7c7c3314c85285da20c995497345d827834cff19204061856800973b6cafa296"
+    },
+    {
+      "path": "apps/mobile/src/MobileRobot.vue",
+      "bytes": 6945,
+      "sha256": "4187506b62a65261774b725b1e6305ffac3c2aa123c4a8d9a2c6207b945b5c7d"
+    },
+    {
+      "path": "apps/mobile/src/account.css",
+      "bytes": 9178,
+      "sha256": "c1752d0eff6ab0dec8741fb5f03d6ff4f4f55bb1eb76bf7c1736157f6d6810ae"
+    },
+    {
+      "path": "apps/mobile/src/assessment-compact.css",
+      "bytes": 3413,
+      "sha256": "069cb36978b07a9c0489278e63f97351992af3aef39cf7a97ab4ec69f13d7341"
+    },
+    {
+      "path": "apps/mobile/src/compact.css",
+      "bytes": 1873,
+      "sha256": "c99af312cc9bc9b8bb10b0a1f01381b6d85392b0f7aed90fbc95ebc79c09f681"
+    },
+    {
+      "path": "apps/mobile/src/entry.ts",
+      "bytes": 1808,
+      "sha256": "24728a18e741acd14aa598cd258f16a2ef55c74829bb5b2de1be8f3537d7ea38"
+    },
+    {
+      "path": "apps/mobile/src/main.ts",
+      "bytes": 1293,
+      "sha256": "f886af61ab58e1e3e5dc44ce98ac9d3e47ee152d11f8cd2b65a7fe3bad969372"
+    },
+    {
+      "path": "apps/mobile/src/reports-compact.css",
+      "bytes": 24778,
+      "sha256": "985a3d2b6a4fbccfdf42994faad47fb3dd36637f80b3734de224072bc78c1dd7"
+    },
+    {
+      "path": "apps/mobile/src/theme.css",
+      "bytes": 38351,
+      "sha256": "628796f0e4f71ec201aa40ab4fc3829dd6dd2589847b63e76f2b11428d80c003"
+    },
+    {
+      "path": "apps/mobile/src/training-compact.css",
+      "bytes": 19313,
+      "sha256": "7e2d11b702b1a89850ebcc733d2d413cb3d293fd4bb833bd7b593ab751c5fd5d"
+    },
+    {
+      "path": "apps/mobile/tests/assessment_mobile.py",
+      "bytes": 9384,
+      "sha256": "c80041a3df36c824c96ea1cb1402f98e3476ab32b2763fdfea3bbc87ffe0997e"
+    },
+    {
+      "path": "apps/mobile/tests/compact_fixtures.py",
+      "bytes": 22888,
+      "sha256": "af0e779399128a310c98f7c603d12fbe86503a4c0890d34b354a8036c79803b9"
+    },
+    {
+      "path": "apps/mobile/tests/compact_layout.py",
+      "bytes": 10867,
+      "sha256": "8cae52fbba7a45d94e4d6cc91efddbf4850501fb9c8198d2d8cf7e15a69fad43"
+    },
+    {
+      "path": "apps/mobile/tests/report_layout.py",
+      "bytes": 14129,
+      "sha256": "71f9c31a781109415208c87f281816a52ea9643e7851d63c51e9361e5dd3d4c7"
+    },
+    {
+      "path": "apps/mobile/tests/smoke.py",
+      "bytes": 16150,
+      "sha256": "d0a5c8318c81312e9800f59ce913dbcbc03f9fde36b867840443e0c64ac491f0"
+    },
+    {
+      "path": "apps/mobile/tsconfig.json",
+      "bytes": 675,
+      "sha256": "2d664238e3dbd73a88494dfac2574dbef67b2fd125a968a4bfdc4f850c99a80d"
+    },
+    {
+      "path": "apps/mobile/vite.config.mjs",
+      "bytes": 1198,
+      "sha256": "3c7fe5c7655506ea8b0c3558789d309ca4df4c7bf0b668fa23350ff754425a18"
+    },
+    {
+      "path": "apps/web/.editorconfig",
+      "bytes": 216,
+      "sha256": "140a3af47b162217409f8e635fc70d0b01caf0ee81612d8904412366e83a1063"
+    },
+    {
+      "path": "apps/web/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": "apps/web/.gitignore",
+      "bytes": 430,
+      "sha256": "d7454642727ab49db0886fcb7e45b7170a17b49338235c34497cc99199aef140"
+    },
+    {
+      "path": "apps/web/.oxlintrc.json",
+      "bytes": 227,
+      "sha256": "e7c18b68f304584ec9a4899d28d35a0b51bebf6f4dfa7e3383ce7f6e7c700a90"
+    },
+    {
+      "path": "apps/web/.prettierrc.json",
+      "bytes": 120,
+      "sha256": "f676d50058f1d9c72b54328a9a44c0f0df5ad31be3252849ab910ce83123cca6"
+    },
+    {
+      "path": "apps/web/README.md",
+      "bytes": 1943,
+      "sha256": "1f1577b8bee7ea2c4ce70036d5a1543ad74e0eaada18f6d8a739e9f5bf7fe6bf"
+    },
+    {
+      "path": "apps/web/e2e/a01-requirements.spec.ts",
+      "bytes": 12989,
+      "sha256": "4371045e02e5e6f910bcb3ff72b2eedd9519c0f7f614772260ec3d9c27b00342"
+    },
+    {
+      "path": "apps/web/e2e/account-registration.spec.ts",
+      "bytes": 6748,
+      "sha256": "0133b68ee772bbc13e20a9c2ee48be2d98d206d9a529b50285fa60c5560a49f3"
+    },
+    {
+      "path": "apps/web/e2e/assessment-reference.spec.ts",
+      "bytes": 8430,
+      "sha256": "2a2a001baaa18089a00f0808fd94a7471bf1da4ae82018cab9882ee666f47f0a"
+    },
+    {
+      "path": "apps/web/e2e/blueprint-authoring.spec.ts",
+      "bytes": 6995,
+      "sha256": "9e301f8d12507c26b0d21cb24d24ee82fa4f03ea021fa6da50a0fe1a998ac160"
+    },
+    {
+      "path": "apps/web/e2e/learner-runner.spec.ts",
+      "bytes": 7902,
+      "sha256": "a8e6163213b06f977a7ecab0d2bd51b32ab2fa71e025fc3a2633b877408dc89e"
+    },
+    {
+      "path": "apps/web/e2e/measure-admin.spec.ts",
+      "bytes": 19348,
+      "sha256": "ab6c13983a3a111cf5f307df4c0cfa73a589d3a550743eeade60e8e7369b158a"
+    },
+    {
+      "path": "apps/web/e2e/measure-workspace.spec.ts",
+      "bytes": 38183,
+      "sha256": "8dc08c3453a3e7fb8c60a43f6fbc1df2dfb8ba6705cfc20099e9f22326cc5e13"
+    },
+    {
+      "path": "apps/web/e2e/organization-analytics.spec.ts",
+      "bytes": 5073,
+      "sha256": "a3e6c6b74084285f953ba7a1dcdcc7af100007f4c1ee2c42074a6d5d3c0725f8"
+    },
+    {
+      "path": "apps/web/e2e/pilot-lab.spec.ts",
+      "bytes": 4584,
+      "sha256": "18e575f7985db54beef0fe7df80ac47041c7927e8442ee2101952422b2fcdfe1"
+    },
+    {
+      "path": "apps/web/e2e/portal-recovery.spec.ts",
+      "bytes": 1303,
+      "sha256": "4f5a32d440229b648f83e4aa9e4d59fa1a62639a92174bcbd6d2288169d7482a"
+    },
+    {
+      "path": "apps/web/e2e/report-launch-reference.spec.ts",
+      "bytes": 18514,
+      "sha256": "01fa6bdb07ae009516646626edcd4f940dd8601a590c6c8b8ff3976ef4578eef"
+    },
+    {
+      "path": "apps/web/e2e/shell-fixture.ts",
+      "bytes": 1230,
+      "sha256": "06b82655d389fe2a98f67cfd596963138ee7740035167247db60e9758fad8586"
+    },
+    {
+      "path": "apps/web/e2e/staff-login.spec.ts",
+      "bytes": 2697,
+      "sha256": "ca79a3375b2b5ac6481b4672fc67a85bb9ddbe0d73735c98f0accbba8706af67"
+    },
+    {
+      "path": "apps/web/e2e/teacher-authoring.spec.ts",
+      "bytes": 11303,
+      "sha256": "bf97e0b46cde4a4f25fe8b487d0695a511edc60f938dbb01107f6eea758df394"
+    },
+    {
+      "path": "apps/web/e2e/training-retest.spec.ts",
+      "bytes": 11579,
+      "sha256": "7e1b87ec6f7a7a124a517f953fb63ad3c61e8078427a4f76f852ecef50ab41b7"
+    },
+    {
+      "path": "apps/web/e2e/trusted-scoring.spec.ts",
+      "bytes": 9218,
+      "sha256": "466f3e2d70fcb061730a33093159ec2bd0f2b88e8f9e50c845159d8d08519302"
+    },
+    {
+      "path": "apps/web/e2e/tsconfig.json",
+      "bytes": 310,
+      "sha256": "7f8d03eb2f7731e86fd6f33d422410ec0be11b79cf965a27d6ee82bfd7babc17"
+    },
+    {
+      "path": "apps/web/e2e/vue.spec.ts",
+      "bytes": 500,
+      "sha256": "85c17507a750dbc1a6f87d613cb5b610eca3ed7521885a10e310279848454f8e"
+    },
+    {
+      "path": "apps/web/env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "apps/web/eslint.config.ts",
+      "bytes": 1301,
+      "sha256": "f9009c7addbcbc07e23b7d26ef108abe37a38e8bf3758a42991cce20e8a7fd70"
+    },
+    {
+      "path": "apps/web/index.html",
+      "bytes": 375,
+      "sha256": "9da9d064b0bec55e583cb79d356e715042ccb653e190e90e9158eef5ee1ec5df"
+    },
+    {
+      "path": "apps/web/package.json",
+      "bytes": 1510,
+      "sha256": "117356802869cf4fee87b600f889556345541a73c8698ea276715ebc6db12540"
+    },
+    {
+      "path": "apps/web/playwright.config.ts",
+      "bytes": 3267,
+      "sha256": "786da36a1d65e5a06708d34910b04ab2d0e24be0eb750af68233f34bbb0824ab"
+    },
+    {
+      "path": "apps/web/pnpm-lock.yaml",
+      "bytes": 117642,
+      "sha256": "e23b74486eab4a00127c97e38558f346b31aceb9a728ec9f8fa3974c8d5f86d1"
+    },
+    {
+      "path": "apps/web/public/assessment-media/evidence-chart.svg",
+      "bytes": 1771,
+      "sha256": "02635e6c08802fea4938e53f3716a6f661dc46a92b917b9aadd17b57d3f7f38d"
+    },
+    {
+      "path": "apps/web/public/favicon.ico",
+      "bytes": 4286,
+      "sha256": "db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445"
+    },
+    {
+      "path": "apps/web/public/fonts/outfit/OFL.txt",
+      "bytes": 4388,
+      "sha256": "e2a6bbb2589b85bac1690ec8f220b22a9c3af9bfda56df6391f7ab491c7a039f"
+    },
+    {
+      "path": "apps/web/public/fonts/outfit/Outfit-SemiBold.woff2",
+      "bytes": 28876,
+      "sha256": "3b09ef51d441f85040aafa11740949125fd81594c236e0bf798b5a20a6a81a6a"
+    },
+    {
+      "path": "apps/web/public/fonts/outfit/README.md",
+      "bytes": 694,
+      "sha256": "e4a963bebff4c0b4f013ba11c43b11433961e00f12ca4399450d953e165ecdb4"
+    },
+    {
+      "path": "apps/web/src/App.vue",
+      "bytes": 736,
+      "sha256": "ac2801f356b1f11fe6ae2aad790ecbab5e5fb84bd7e76f86822fc3d57084f217"
+    },
+    {
+      "path": "apps/web/src/__tests__/AdminTrialPanel.spec.ts",
+      "bytes": 7846,
+      "sha256": "f15d240776620360c531977e9860989bb3721423f28ec1500141519dd0ab0d93"
+    },
+    {
+      "path": "apps/web/src/__tests__/App.spec.ts",
+      "bytes": 2731,
+      "sha256": "c5e759ad0471fef4c999b9ad47299b142db3acceaab26897f3009d76fe41a9cc"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentAuthoringConfig.spec.ts",
+      "bytes": 2468,
+      "sha256": "94e6c5765288ce0e842a235f5b5dd97e310f3ec40c8741361bb19ebf628aab30"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentMaterials.spec.ts",
+      "bytes": 5860,
+      "sha256": "81a410016e9e3f9199312b822346cde68cfe41754de9aff80445cb5ae01cf2b0"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentPauseView.spec.ts",
+      "bytes": 6733,
+      "sha256": "ef7dd0215a8f23b21f195022fe2dbd750a46f3dac5eec2060d11e05fd49c56db"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentQuestionMedia.spec.ts",
+      "bytes": 5122,
+      "sha256": "358c60586ef64fc355125773481155812a7cdd69c461e55ad985eb43bf25f16e"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentReadOnlyAttachments.spec.ts",
+      "bytes": 3373,
+      "sha256": "edc17c2ddb2e591bf15cdb20865240684840763c2005a510fc2cf1405dec676b"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentRunnerView.spec.ts",
+      "bytes": 14782,
+      "sha256": "4ebaa160a47addfed2f7162a8f183af960bc5b0ff4e083d8710a11c64a7b3468"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentSelfService.spec.ts",
+      "bytes": 15345,
+      "sha256": "d73515881f27de8c922204cdb4617375411a60bb1d4acc4de68070060fdc27f8"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentSessionFrame.spec.ts",
+      "bytes": 11040,
+      "sha256": "c93ce678dfe99d42e7c43d7553e29db8495601e5a7cf0633e847b016bad4717d"
+    },
+    {
+      "path": "apps/web/src/__tests__/AssessmentView.spec.ts",
+      "bytes": 16753,
+      "sha256": "3e2382342a9272bb871c5b8ffebfca8a0d7d825a7641b2cfd9cba5ddfac480a5"
+    },
+    {
+      "path": "apps/web/src/__tests__/AuthoringView.spec.ts",
+      "bytes": 12157,
+      "sha256": "1f90930b7857d39078a90b3349220c09abd2958ae48ed68f7afbfc75be67928c"
+    },
+    {
+      "path": "apps/web/src/__tests__/BankReviewPanel.spec.ts",
+      "bytes": 34536,
+      "sha256": "5a9748ed955bafad5e922cf13b97fb31a17b4a7e2b554f86744e659088a6ba55"
+    },
+    {
+      "path": "apps/web/src/__tests__/BlueprintPlanWizard.spec.ts",
+      "bytes": 8712,
+      "sha256": "b05dc0fa959b9d095c366e1ecd3b05d8aeec3c0acf88f794a7b78d6aa8a548ca"
+    },
+    {
+      "path": "apps/web/src/__tests__/BrandMark.spec.ts",
+      "bytes": 853,
+      "sha256": "e27e92d4e635ea2c02fcf96780beb5fc4d82679dce5c8726238a34be90520606"
+    },
+    {
+      "path": "apps/web/src/__tests__/CatLabView.spec.ts",
+      "bytes": 2374,
+      "sha256": "59a7399135382f5934538de76ec8907106caf253f19650157f1aff7164442876"
+    },
+    {
+      "path": "apps/web/src/__tests__/ComparableTrends.spec.ts",
+      "bytes": 7065,
+      "sha256": "e07768054748c3506facb5d81460a645ab0cfe35297c90be9450d3347a178da9"
+    },
+    {
+      "path": "apps/web/src/__tests__/ContentAssignmentPanel.spec.ts",
+      "bytes": 6570,
+      "sha256": "e5d17ee59bf3b589860eefb02df47c156fb62f7be22e422e3583f062270f2470"
+    },
+    {
+      "path": "apps/web/src/__tests__/ContentOperationsRail.spec.ts",
+      "bytes": 2447,
+      "sha256": "8e694b928b3830a5afbea3b89806fbc445f5c1bf122d4718177399eccb9eb973"
+    },
+    {
+      "path": "apps/web/src/__tests__/ContentTrialView.spec.ts",
+      "bytes": 19667,
+      "sha256": "cb60448b0dd22616dd98d97e19bdb1de10fcbb718ea3c8a5aac8818c0bb496d1"
+    },
+    {
+      "path": "apps/web/src/__tests__/ContentVersionPanel.spec.ts",
+      "bytes": 8594,
+      "sha256": "390bbc84a439ece1945ec0411b03b46a0fb8a2fd784e817da05b901eb1f9252a"
+    },
+    {
+      "path": "apps/web/src/__tests__/DialogueAssessmentPanel.spec.ts",
+      "bytes": 15269,
+      "sha256": "331bcab23cc4742e611f11212ed42b7b0329e6fe53f39104f1d759365f639812"
+    },
+    {
+      "path": "apps/web/src/__tests__/GrowthAssistantEntry.spec.ts",
+      "bytes": 26194,
+      "sha256": "37129bc3032c3aa95fcdb81e0b8f5fb775d31e20b60ba18e52cb78019775ce37"
+    },
+    {
+      "path": "apps/web/src/__tests__/HelpView.spec.ts",
+      "bytes": 3454,
+      "sha256": "5c1bed9547b35a89e8b0d8e46e737f2eb0ad33286b03084737431e2510baca09"
+    },
+    {
+      "path": "apps/web/src/__tests__/HistoryView.spec.ts",
+      "bytes": 5266,
+      "sha256": "0c565f8788742b2cf85bd54a8c97e6bd296926f7c1afd42cd62908798a476976"
+    },
+    {
+      "path": "apps/web/src/__tests__/HomeView.spec.ts",
+      "bytes": 792,
+      "sha256": "2f698fad47e17501c8ae12d6be4367bc6a9fbbc735da6f13ed1d2587d50057fb"
+    },
+    {
+      "path": "apps/web/src/__tests__/ItemBankEditing.spec.ts",
+      "bytes": 3783,
+      "sha256": "91b74685f24a1a5840d5a36b9e0b0ab4dfd2eed2ffd8a8566be506c60f6a101f"
+    },
+    {
+      "path": "apps/web/src/__tests__/ItemBankReviewEntry.spec.ts",
+      "bytes": 1315,
+      "sha256": "9a6b41bf4012c0451d065ccf53d2620fea894704cbf7cfa9178f5abc2541cc77"
+    },
+    {
+      "path": "apps/web/src/__tests__/ItemBankView.spec.ts",
+      "bytes": 3368,
+      "sha256": "7dc4f6733d6684df1cf075b6ad10cd45864178a91bcc387a153312c15e590347"
+    },
+    {
+      "path": "apps/web/src/__tests__/ItemVersionEditor.spec.ts",
+      "bytes": 9465,
+      "sha256": "c4d84844ca873e852dc172823816b8dfb5a2c48e35f02e5a2041ac3f155da95f"
+    },
+    {
+      "path": "apps/web/src/__tests__/LoginView.spec.ts",
+      "bytes": 9468,
+      "sha256": "4730ff7943be4dc50bfa28b482bffbb9886379b433a9496e4f8d146864bf0dfc"
+    },
+    {
+      "path": "apps/web/src/__tests__/MeasureShell.spec.ts",
+      "bytes": 9155,
+      "sha256": "3354e599b61729c4406b93f75553914e476978c15100fd3674f8e99d3227e124"
+    },
+    {
+      "path": "apps/web/src/__tests__/MembersView.spec.ts",
+      "bytes": 5095,
+      "sha256": "e14e2c6f29dc770e659736d17c3b7b957b6b6c33e5c51b8524d4d91d43cbf68b"
+    },
+    {
+      "path": "apps/web/src/__tests__/NavigationMenu.spec.ts",
+      "bytes": 5421,
+      "sha256": "152909675660ab314ee559ec7b7219103aae042e9e67a7c07d3cbe3179443036"
+    },
+    {
+      "path": "apps/web/src/__tests__/OrganizationAnalyticsView.spec.ts",
+      "bytes": 7964,
+      "sha256": "3524031753ab154fd9dab049adee1703ffbebad016e5d142cc7baab74b311f48"
+    },
+    {
+      "path": "apps/web/src/__tests__/PasswordChangeForm.spec.ts",
+      "bytes": 8824,
+      "sha256": "f761f3c75aaecd6701706b652e12d9467beb0355090420a1f6c860bf99c13147"
+    },
+    {
+      "path": "apps/web/src/__tests__/PersonalProfileDialog.spec.ts",
+      "bytes": 7614,
+      "sha256": "4eb503740453187b7118cd0d18824a9c5559300bc96d5e96984275de31d30a7d"
+    },
+    {
+      "path": "apps/web/src/__tests__/PilotLabView.spec.ts",
+      "bytes": 18668,
+      "sha256": "ef45c9ce7e55ac65c60d21120251b34f320d0ebfcfd41d5b91e17aceca6f9a4d"
+    },
+    {
+      "path": "apps/web/src/__tests__/PlatformLearnersPanel.spec.ts",
+      "bytes": 3469,
+      "sha256": "416ad63f1c4e858661a411e77ef2462f848a65fef84201a08eb5e861f836e12a"
+    },
+    {
+      "path": "apps/web/src/__tests__/PracticalWorkbenchView.spec.ts",
+      "bytes": 12749,
+      "sha256": "169c77f908f5d96585598add420ee7e77fb740924324ec147ed746cd1722bfb3"
+    },
+    {
+      "path": "apps/web/src/__tests__/RegisterView.spec.ts",
+      "bytes": 11404,
+      "sha256": "47e11e12776e764e84f0c9840caa1d25f75aba786883b116d8b82acee8e24a20"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReportEvidencePanel.spec.ts",
+      "bytes": 14386,
+      "sha256": "3e66d7e503cf437d00e1a335ec870108fefc0088bf4dbe170e0eb36f0e7aca44"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReportRefresh.spec.ts",
+      "bytes": 19633,
+      "sha256": "b89b82d0290c0323af6613aa85c39f9f8d6689d92ac8fd4c44584b13b94393ac"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReportView.spec.ts",
+      "bytes": 13335,
+      "sha256": "ca03f841694cb89c0e8d701ff45991bc15a050236a346175967620657684b68f"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReportsView.spec.ts",
+      "bytes": 3610,
+      "sha256": "7f444316044a7d3813846374dc4c03a175a6d73d0f430c8584ab827d63b73698"
+    },
+    {
+      "path": "apps/web/src/__tests__/ResumeProgress.spec.ts",
+      "bytes": 2467,
+      "sha256": "8b87620c2f0c2746e0067f4b9b0732d6ea60134fa640ced49874fb8d9437fbce"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReviewDialogueAttachments.spec.ts",
+      "bytes": 4842,
+      "sha256": "48ddb713f979f22ce2ab293b69e4d923bb293fc135c8234c29e84ee05eb2dfdf"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReviewPracticalMaterials.spec.ts",
+      "bytes": 5922,
+      "sha256": "bca9b08e94111073a79a4f32d566aadd99377f6680a0c27fdfa19b1b43f541c4"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReviewPublicationPanel.spec.ts",
+      "bytes": 16507,
+      "sha256": "df806293cd59e9e039a1ff7e7a8da467f8c515ff22a049215a037dc6091bc4e9"
+    },
+    {
+      "path": "apps/web/src/__tests__/ReviewWorkbenchView.spec.ts",
+      "bytes": 14607,
+      "sha256": "f6e67ebb8634e882d9b3c04e3df912c6a4b2913037fad2816e1a2ed7f8156b46"
+    },
+    {
+      "path": "apps/web/src/__tests__/SelfStudyLibrary.spec.ts",
+      "bytes": 3837,
+      "sha256": "4556bff59004903bd0b3e9f15e9aba75f90756923b96af2664874dd939b2b541"
+    },
+    {
+      "path": "apps/web/src/__tests__/SixDimensionChart.spec.ts",
+      "bytes": 1093,
+      "sha256": "0f20fff7c30d5b736528c752567fa530906295dec2b99c3b702e98ce95092e17"
+    },
+    {
+      "path": "apps/web/src/__tests__/StaffLoginView.spec.ts",
+      "bytes": 8994,
+      "sha256": "059fb268b0726627cc1ab474d7f483edd62fa7b04cf5046b622e33cffbfaa863"
+    },
+    {
+      "path": "apps/web/src/__tests__/SystemView.spec.ts",
+      "bytes": 7680,
+      "sha256": "3114fee9c3352c3250a72cf2093384f72da1448e6501ea1dcff74b950d01a149"
+    },
+    {
+      "path": "apps/web/src/__tests__/TeachingView.spec.ts",
+      "bytes": 4995,
+      "sha256": "17a0483ed4688a82e035ba04acda325be0c7c5b168c498af240720c3b760b506"
+    },
+    {
+      "path": "apps/web/src/__tests__/TrainingFeatureRefresh.spec.ts",
+      "bytes": 14837,
+      "sha256": "33cc26c3177cdef3c66885a8d96013185ce3de6ede4a058b5314c93a1098ae82"
+    },
+    {
+      "path": "apps/web/src/__tests__/TrainingOverview.spec.ts",
+      "bytes": 5000,
+      "sha256": "dcf8ca680b579cf745025fe679f666b306af913db4d4d7550d6a9ad8f388fdf2"
+    },
+    {
+      "path": "apps/web/src/__tests__/TrainingTaskReview.spec.ts",
+      "bytes": 3076,
+      "sha256": "7302899b5d0c545e77556e14dbe76921f8df5774c37d0178fc0ef373511edf3b"
+    },
+    {
+      "path": "apps/web/src/__tests__/TrainingView.spec.ts",
+      "bytes": 58659,
+      "sha256": "f53c8a37897ff412dbee1a81089336124b294f6dcb71e69d57d7ec826c1f6411"
+    },
+    {
+      "path": "apps/web/src/__tests__/WorkspaceAbilityChart.spec.ts",
+      "bytes": 2098,
+      "sha256": "d1f3e15acf8ad013157fa5369dc4ebe9bb8f18b3b7b40ea59f25aa698e359fa2"
+    },
+    {
+      "path": "apps/web/src/__tests__/WorkspaceAssistant.spec.ts",
+      "bytes": 14254,
+      "sha256": "4adb201a21fdc88736290f84a1f368b1ef9989311fdee9c28815b0af50530577"
+    },
+    {
+      "path": "apps/web/src/__tests__/WorkspaceView.spec.ts",
+      "bytes": 15056,
+      "sha256": "192d2b5244b998bed32e9a750389c3a60bc4a37095f70a73641078e59357bc00"
+    },
+    {
+      "path": "apps/web/src/__tests__/accessStore.spec.ts",
+      "bytes": 4126,
+      "sha256": "497c1c1927c9cfcf8feb1c857e207929575c03c6f4d12971d6618bea7b4a0526"
+    },
+    {
+      "path": "apps/web/src/__tests__/adminWorkspaceApi.spec.ts",
+      "bytes": 2541,
+      "sha256": "cbc2a53d711882a730f83ad1a7f99d79443d2931d4f9835561b754cce9950e12"
+    },
+    {
+      "path": "apps/web/src/__tests__/assessmentCompletion.spec.ts",
+      "bytes": 1573,
+      "sha256": "7da9e424b5f6e0f863c23f216d8d953a20d1615543aa24ba3c57d0e9149d7174"
+    },
+    {
+      "path": "apps/web/src/__tests__/assessmentDraft.spec.ts",
+      "bytes": 6615,
+      "sha256": "cf8472a499695b68c61bb2d6a9ae693354078e7574c40dad2773cc3aba1452ad"
+    },
+    {
+      "path": "apps/web/src/__tests__/authStore.spec.ts",
+      "bytes": 10165,
+      "sha256": "bead6d65fd10a8e3091dbbd2f043ca544670012d167359fad56e0344e0d162ac"
+    },
+    {
+      "path": "apps/web/src/__tests__/authoringApi.spec.ts",
+      "bytes": 3369,
+      "sha256": "23835cbd5ab4249f0eef5096ae2aaa026784859afaae006268edcd48033d2c92"
+    },
+    {
+      "path": "apps/web/src/__tests__/blueprintAuthoringApi.spec.ts",
+      "bytes": 1283,
+      "sha256": "b24bc6e372bce5b154c60b717ab277714cde6a7ba11e0f07f21f6aa92329c60b"
+    },
+    {
+      "path": "apps/web/src/__tests__/contentApi.spec.ts",
+      "bytes": 2018,
+      "sha256": "39011deed9cf9580210b5d05d4ed33a15ce9e3c744596465e5884ae5306379ba"
+    },
+    {
+      "path": "apps/web/src/__tests__/contentReviewApi.spec.ts",
+      "bytes": 4896,
+      "sha256": "ef0bfc328f6a5c40e6e788824c98703cd3c935946217a281f57a675af783d68b"
+    },
+    {
+      "path": "apps/web/src/__tests__/contentTrialApi.spec.ts",
+      "bytes": 3217,
+      "sha256": "5080c4ece782e3d10369c575dfdfccbf2591d505d96e12eb9803505fe9de854b"
+    },
+    {
+      "path": "apps/web/src/__tests__/dialogueApi.spec.ts",
+      "bytes": 4518,
+      "sha256": "85c263a8cf788ab4dbd8dbc28938a6dcd0c37eae95c1e5d8902fd6899b6146ab"
+    },
+    {
+      "path": "apps/web/src/__tests__/featureStore.spec.ts",
+      "bytes": 7650,
+      "sha256": "3ef8f9f2f9c1ea77e09eb962954a07db7c9232759a7179d474ba1996d8613275"
+    },
+    {
+      "path": "apps/web/src/__tests__/growthGuideApi.spec.ts",
+      "bytes": 9483,
+      "sha256": "1319edb47fa3888a4fe44175276f0ad2de91b69e44b7da7e4bdc3674ef5f056a"
+    },
+    {
+      "path": "apps/web/src/__tests__/loginPortal.spec.ts",
+      "bytes": 4354,
+      "sha256": "d737fecb7a374dcdb5e8df1c9e5b169be0d4664c05e5dee8680dc60108705808"
+    },
+    {
+      "path": "apps/web/src/__tests__/loginPortalRouter.spec.ts",
+      "bytes": 3781,
+      "sha256": "5df55ed341b19a2b4bbff7985dd29ef717d920c5e04aac69df692efb01deffec"
+    },
+    {
+      "path": "apps/web/src/__tests__/organizationScope.spec.ts",
+      "bytes": 3421,
+      "sha256": "555b079c6435fe18b1cbb65847edc71f8d55f52771cf892b19362139a798f259"
+    },
+    {
+      "path": "apps/web/src/__tests__/passwordChangeStore.spec.ts",
+      "bytes": 8868,
+      "sha256": "be124c88a574233168c6ab1dd2327e08caa74d70c573f024bb41d31fe2320bca"
+    },
+    {
+      "path": "apps/web/src/__tests__/portalNavigation.spec.ts",
+      "bytes": 1801,
+      "sha256": "763780e2e9b05b44e52117abf51bf27fee56a77dd7b0df0f6e48b922dc03b5ba"
+    },
+    {
+      "path": "apps/web/src/__tests__/reviewDialogueApi.spec.ts",
+      "bytes": 2072,
+      "sha256": "ff1308c3b5324d7b5e87d85473821a31fdce8a97c2175ecded4aee6511d8f874"
+    },
+    {
+      "path": "apps/web/src/__tests__/reviewMaterialsApi.spec.ts",
+      "bytes": 2661,
+      "sha256": "047decd0e9ee3c7cd4e40dc242b74282c126bf361ac0ab20dd73d7c77ba6d134"
+    },
+    {
+      "path": "apps/web/src/__tests__/routeAccess.spec.ts",
+      "bytes": 988,
+      "sha256": "1981b2ad766379c5dc86afa184c1f7e84ee95ada146583cd2689310189a7c536"
+    },
+    {
+      "path": "apps/web/src/__tests__/singlePlatformNavigation.spec.ts",
+      "bytes": 888,
+      "sha256": "adfc25003fc6aa2c23c65a73675f9ce53e05dfafeeaa633ee79adaf0f686fae7"
+    },
+    {
+      "path": "apps/web/src/__tests__/trainingApi.spec.ts",
+      "bytes": 5770,
+      "sha256": "17291696bddf987a22ca30bd70b8a60dbefdb2e552dc59fb2dd47a0a31979a5b"
+    },
+    {
+      "path": "apps/web/src/__tests__/trialExpiry.spec.ts",
+      "bytes": 1771,
+      "sha256": "1751ec7a26b1c8811396afef01779146b16fff1270b0ad553bbcff351775a8cb"
+    },
+    {
+      "path": "apps/web/src/__tests__/workspaceApi.spec.ts",
+      "bytes": 2219,
+      "sha256": "062ee027ffaf333b84cb71350efde2dd4d79aa53446c1a606ab48f106ebfefd8"
+    },
+    {
+      "path": "apps/web/src/assets/admin-workspaces.css",
+      "bytes": 2930,
+      "sha256": "65b60e54c7fe120a707796946d36b3892763100639ab793afcec020cda3b5079"
+    },
+    {
+      "path": "apps/web/src/assets/ai-measure-logo.png",
+      "bytes": 1565953,
+      "sha256": "528b3743b7796de80243007c32607e4ce6008e00887ffa034c8ba05ba4daaa68"
+    },
+    {
+      "path": "apps/web/src/assets/base.css",
+      "bytes": 1165,
+      "sha256": "ec578d0ad3077db25ca72afd5864fa0b29a182e546dc452b95d049b9e2524e34"
+    },
+    {
+      "path": "apps/web/src/assets/content-trial.css",
+      "bytes": 4199,
+      "sha256": "5bd15ad94b36fd6a98cc3d3b029a1e9bf2adbfd12796b3ee2d02c7aecb37e211"
+    },
+    {
+      "path": "apps/web/src/assets/growth-robot-user.png",
+      "bytes": 785383,
+      "sha256": "5a32533619b599ab2f0733c7615513a30cd6607b37cc50ff2015c627ec3864b1"
+    },
+    {
+      "path": "apps/web/src/assets/growth-robot.png",
+      "bytes": 1034236,
+      "sha256": "304858358b0461b062ad1e51b314c23112423aaac69acf4603dbc9dadcef5144"
+    },
+    {
+      "path": "apps/web/src/assets/main.css",
+      "bytes": 2734,
+      "sha256": "cb559725a27d71032d7cc09516084fda08c5cbd699aeb48fc1d1683446fe7e3a"
+    },
+    {
+      "path": "apps/web/src/assets/public-pages.css",
+      "bytes": 20834,
+      "sha256": "9a790012ead8fac8c856a2fd379416350e9b059dedf565f157d4ea8aa811aac4"
+    },
+    {
+      "path": "apps/web/src/assets/reference-art/guide-source.png",
+      "bytes": 1266966,
+      "sha256": "17586f6a9e8c3cad52e9c3bd6cd0ba3886e62103199d654e30f18d73fd3a40f0"
+    },
+    {
+      "path": "apps/web/src/assets/reference-art/method-source.png",
+      "bytes": 1166992,
+      "sha256": "9acf0723c1b2c792ea59d93f219efeb3da470950e0ffe0eae150d3701b835383"
+    },
+    {
+      "path": "apps/web/src/assets/reference-art/radar-source.png",
+      "bytes": 1234046,
+      "sha256": "dcfd7980adb36faa49cce60827fa85abd42ba2c90f81f4e4b93a23823c215a96"
+    },
+    {
+      "path": "apps/web/src/assets/registration-form.css",
+      "bytes": 8880,
+      "sha256": "f3a293f949d821b5bb1563877f53e64f89be63283e05508c97c35077d212d819"
+    },
+    {
+      "path": "apps/web/src/assets/registration-page.css",
+      "bytes": 2133,
+      "sha256": "9f198bff8edbbe8838d6a917ce1267b22888df36d590a646693a0fc7de5649b2"
+    },
+    {
+      "path": "apps/web/src/assets/workspace-theme.css",
+      "bytes": 635,
+      "sha256": "3e139e606a7887b57377fbc702fa3401280aa8d8ae2aef0083c10c1e37dad717"
+    },
+    {
+      "path": "apps/web/src/components/AdminTrialPanel.vue",
+      "bytes": 14009,
+      "sha256": "2857ccdfaf55ab61c062ae2cb5b6000b8478bd18c7badbe3ead8d0c1c413c59a"
+    },
+    {
+      "path": "apps/web/src/components/AssessmentMaterials.vue",
+      "bytes": 4381,
+      "sha256": "595ea2f7f2f4b73c8ad337985d31bf9d50c521c72c4a5dff8fbc35fafec4d192"
+    },
+    {
+      "path": "apps/web/src/components/AssessmentOriginNotice.vue",
+      "bytes": 699,
+      "sha256": "d07d29a9b3193aa64d1831ea8fb644cba510b00b3798463c379d527e8fc7bab6"
+    },
+    {
+      "path": "apps/web/src/components/AssessmentQuestionMedia.vue",
+      "bytes": 2169,
+      "sha256": "7cecc4d01345875d76e8126552f13b219991a5b5675a0662bffa2eefa118caa7"
+    },
+    {
+      "path": "apps/web/src/components/AssessmentReadOnlyAttachments.vue",
+      "bytes": 4125,
+      "sha256": "f8718ad8bb69d0eb08c0a6da443e06e052357ddd884632718a4a7576a596beed"
+    },
+    {
+      "path": "apps/web/src/components/AssessmentSessionFrame.vue",
+      "bytes": 30897,
+      "sha256": "ecd853395ff943450c8d3b839292e4db8effd05c58b838e283b0ff28bbd5858a"
+    },
+    {
+      "path": "apps/web/src/components/AuthPageFrame.vue",
+      "bytes": 8143,
+      "sha256": "b569979b155cfe75d6c0665c2f2510cd0d910f0bca16a3596f6da52e6d4d0649"
+    },
+    {
+      "path": "apps/web/src/components/BankReviewPanel.vue",
+      "bytes": 49480,
+      "sha256": "70667986a8e59719f8fec66a2a38f5bfe097941f88358167a24b8ed2675e2969"
+    },
+    {
+      "path": "apps/web/src/components/BlueprintPlanWizard.vue",
+      "bytes": 34856,
+      "sha256": "05f2dbc4c29ac33ed0edac36d283e516f808ed37b3692b1affd564d66e81aa90"
+    },
+    {
+      "path": "apps/web/src/components/BlueprintTimingEditor.vue",
+      "bytes": 3389,
+      "sha256": "06db6b448832064f46b268454cac8d1037a71adcd664b6794111b071d8d18087"
+    },
+    {
+      "path": "apps/web/src/components/BrandMark.vue",
+      "bytes": 631,
+      "sha256": "097f16f1d14d3d32675e1de3c71c28edb8bdbf15e17094cb15c50aefaf2b6557"
+    },
+    {
+      "path": "apps/web/src/components/ComparableTrends.vue",
+      "bytes": 27136,
+      "sha256": "123e1e559895742e4168280906dd30c0af83924eecf595da446d8ea1f56f76c4"
+    },
+    {
+      "path": "apps/web/src/components/ContentAssignmentPanel.vue",
+      "bytes": 8573,
+      "sha256": "f29e0518b45e1d419e7dc02edf9325993fd762a114937dc2171669dae7cd05ca"
+    },
+    {
+      "path": "apps/web/src/components/ContentOperationsRail.vue",
+      "bytes": 8577,
+      "sha256": "7b2e1a9cd3b3d53b09c9e182b0271f749f8a267eca1c94c0e3315f6e5d7c9a78"
+    },
+    {
+      "path": "apps/web/src/components/ContentTrialAnswer.vue",
+      "bytes": 4464,
+      "sha256": "d8af717a7116087980264a84bcb6db03ccae444152d9fccb61e7baa5eee18673"
+    },
+    {
+      "path": "apps/web/src/components/ContentVersionPanel.vue",
+      "bytes": 21710,
+      "sha256": "2e61a03251fea7ef08c5142a2cfa8145f9d4b50d5e82f014717eb37433d67bfa"
+    },
+    {
+      "path": "apps/web/src/components/DemoEnvironmentNotice.vue",
+      "bytes": 624,
+      "sha256": "76c58f41da86bf78c0e9bfadec1aa103de5177d374c1b9946ef16fdeabaaf114"
+    },
+    {
+      "path": "apps/web/src/components/DialogueAssessmentPanel.vue",
+      "bytes": 28331,
+      "sha256": "fd32a832f3474284e7919332a58aa07961c8028baaa81d97b7d3d1c8c711bfe3"
+    },
+    {
+      "path": "apps/web/src/components/GrowthAssistantEntry.vue",
+      "bytes": 32318,
+      "sha256": "2216a1deb4114ed63450176188c7c383e65f9a40a483994f6f324f74a4ef0169"
+    },
+    {
+      "path": "apps/web/src/components/ItemPresentationEditor.vue",
+      "bytes": 6413,
+      "sha256": "b29c4e8224d1f90ecf7377abea6ba40f248f2c825d72621623031d08a8a5f11a"
+    },
+    {
+      "path": "apps/web/src/components/ItemVersionEditor.vue",
+      "bytes": 18765,
+      "sha256": "57028adad2421111fb50d40a6bd1302da1c26b01ed9089acec85f7d613839313"
+    },
+    {
+      "path": "apps/web/src/components/LoginAbilityIllustration.vue",
+      "bytes": 2252,
+      "sha256": "9b4e2d1c54118f212c2eb7c63c93009c72d0e751cafab6a541092d3065f49de3"
+    },
+    {
+      "path": "apps/web/src/components/NavigationMenu.vue",
+      "bytes": 12267,
+      "sha256": "3905b0f6e3b0506f96436fd6415b36b48afb7c699e2f06fb7af468ac64578279"
+    },
+    {
+      "path": "apps/web/src/components/PasswordChangeForm.vue",
+      "bytes": 10388,
+      "sha256": "898e92043e40261197f94323b33d266a5c603b0cd28bccbe0ef3f6c5bbe259c7"
+    },
+    {
+      "path": "apps/web/src/components/PersonalProfileDialog.vue",
+      "bytes": 20145,
+      "sha256": "afc16c3fb746e736a355f40040945bf6ff8bca3f8e5af7576c317da7f9354442"
+    },
+    {
+      "path": "apps/web/src/components/PlatformLearnersPanel.vue",
+      "bytes": 14142,
+      "sha256": "ddc9433fbc40a70af79c2721f10d52a24c2c77ef32a8363a57b9be03ff75e00f"
+    },
+    {
+      "path": "apps/web/src/components/PublicBackdrop.vue",
+      "bytes": 2134,
+      "sha256": "7878e23c45af26218fa7a9450283a99a6294bd7f8973c7c1831a40f282dcdfa0"
+    },
+    {
+      "path": "apps/web/src/components/PublicIllustration.vue",
+      "bytes": 9007,
+      "sha256": "b86b11f3cadd3ff713a6508f6cb5ad04f3e4288e27850196d46c0313f9f52f73"
+    },
+    {
+      "path": "apps/web/src/components/ReferenceArtwork.vue",
+      "bytes": 2176,
+      "sha256": "6a11e68eb93143392a913fca699861e321999a7a8d2ab4cf5a2e38216a307f7a"
+    },
+    {
+      "path": "apps/web/src/components/RegistrationAbilityIllustration.vue",
+      "bytes": 5205,
+      "sha256": "0ec8aa125da5ce1a13647022c893aa7317f3a0f42d69005010b7a45fb5a34d78"
+    },
+    {
+      "path": "apps/web/src/components/ReportEvidencePanel.vue",
+      "bytes": 23701,
+      "sha256": "cdb90188b63c189fd585780e5897f9eb607e818168a31c3a9dc3edf407a12902"
+    },
+    {
+      "path": "apps/web/src/components/ReportPracticalEvidence.vue",
+      "bytes": 4666,
+      "sha256": "c438c86afc31d83b0c40dbe64e5a59cae8a845bab7cc7f49a8f7468af0f95fc8"
+    },
+    {
+      "path": "apps/web/src/components/ResumeProgress.vue",
+      "bytes": 3064,
+      "sha256": "39d44adfa043cde8bd1b30e1bb287c99194d220a556cf8239aeecf6d6d019a81"
+    },
+    {
+      "path": "apps/web/src/components/ReviewDialogueAttachments.vue",
+      "bytes": 5986,
+      "sha256": "b06148c6732f864f785c78ecc9c2581ff896055b0ff38c8e0c9ee5f89f7d06a3"
+    },
+    {
+      "path": "apps/web/src/components/ReviewPracticalMaterials.vue",
+      "bytes": 8284,
+      "sha256": "1acea3981f1aad64e696037b1632b4d98ac014ab752a819cee3e92afcbf396a1"
+    },
+    {
+      "path": "apps/web/src/components/ReviewPublicationPanel.vue",
+      "bytes": 21157,
+      "sha256": "3e4c03201ab6c297d3f885caecea317437301c16bbf7888de9754e73eaca6427"
+    },
+    {
+      "path": "apps/web/src/components/SelfStudyLibrary.vue",
+      "bytes": 6131,
+      "sha256": "c2303ee4bc75565c465cd6b5554fd95da704d0838871de28b80b7cd4c61e4032"
+    },
+    {
+      "path": "apps/web/src/components/SixDimensionChart.vue",
+      "bytes": 4629,
+      "sha256": "9ada8305de8e5016d7bce27a90f5a90b9ad37d460984580a0998f342e11626f9"
+    },
+    {
+      "path": "apps/web/src/components/TrainingLessons.vue",
+      "bytes": 3591,
+      "sha256": "b41a892e442099b16b01e7df67d5ff8cfdb81365b5636868375ba0235189b706"
+    },
+    {
+      "path": "apps/web/src/components/TrainingOverview.vue",
+      "bytes": 18343,
+      "sha256": "008c6de25c40a626ebb8303d7946483fffa3cc618278e5bb7a897bb2f537e007"
+    },
+    {
+      "path": "apps/web/src/components/TrainingTaskContent.vue",
+      "bytes": 1924,
+      "sha256": "ec01cf01366903043f03cb25f5792898caab87b1b227fee6a24371fd303d050a"
+    },
+    {
+      "path": "apps/web/src/components/TrainingTaskReview.vue",
+      "bytes": 4110,
+      "sha256": "f64a246f424c6d3956733a496f92bd485af37c551f49a5db47e762d230036e78"
+    },
+    {
+      "path": "apps/web/src/components/WorkspaceAbilityChart.vue",
+      "bytes": 6626,
+      "sha256": "59e69e09cb066196d0c434665530b7cb04b2e765676ce7b16eebddcde638d2b8"
+    },
+    {
+      "path": "apps/web/src/components/WorkspaceAssistant.vue",
+      "bytes": 12551,
+      "sha256": "b3f49436834823229d3ce94ba02746b511f00a86957f3706382bdee11b37235b"
+    },
+    {
+      "path": "apps/web/src/components/__tests__/DemoEnvironmentNotice.spec.ts",
+      "bytes": 689,
+      "sha256": "87fc996a456555908ecd7d899712589ded3c4dac0083804626ca38a9935e68c6"
+    },
+    {
+      "path": "apps/web/src/composables/useAssessmentDraft.ts",
+      "bytes": 5764,
+      "sha256": "01b70b2a02ecf06501260102ca41d59131c7d24e4fd30f6866a15f76def8a12d"
+    },
+    {
+      "path": "apps/web/src/domain/assessmentCompletion.ts",
+      "bytes": 1603,
+      "sha256": "bde47db38ce4a8bd003a5f532cd3c8b630272aa5c4b8246a34ecf2ec350c7959"
+    },
+    {
+      "path": "apps/web/src/domain/assessmentLeave.ts",
+      "bytes": 373,
+      "sha256": "38df879211e56fb79180f010e1dd762bb24644d4f43076a76e687a2c53cdf203"
+    },
+    {
+      "path": "apps/web/src/domain/assessmentMedia.ts",
+      "bytes": 1623,
+      "sha256": "74f5a7799893b7243365dddfaac4149a4b5c69fbd09418815609e2bda64e86bf"
+    },
+    {
+      "path": "apps/web/src/domain/capabilities.ts",
+      "bytes": 1156,
+      "sha256": "6a2e98387a1f1e29ee4a06e253ba4f9a95b81238a77da5b55d7db4cab4c12399"
+    },
+    {
+      "path": "apps/web/src/domain/contentTrial.ts",
+      "bytes": 3484,
+      "sha256": "9619be7a9e21a23f24aaeb72231d22af1594e4a6781ef13f80cc1cd57bf52fb9"
+    },
+    {
+      "path": "apps/web/src/domain/learningGuidance.ts",
+      "bytes": 4689,
+      "sha256": "97b2d8c58c9643af5fe91a4ffe73f5e38b950bfa909e4d644278fbaa6ca0ddfb"
+    },
+    {
+      "path": "apps/web/src/domain/loginPortal.ts",
+      "bytes": 3634,
+      "sha256": "c4b20afe7d2adf9400a782d2a0d8a99ec3f5cfa0270ffb08172501d639d55f90"
+    },
+    {
+      "path": "apps/web/src/domain/navigation.ts",
+      "bytes": 3778,
+      "sha256": "d36bccfee2dc1e25f5c5c7645ddd3c3a72e0d8ecc6cba6640d440fd36c50f4b4"
+    },
+    {
+      "path": "apps/web/src/domain/organizationScope.ts",
+      "bytes": 978,
+      "sha256": "c9fed7b0d5fa31e44ebcef1fc4f922e23808751498c1c4125a199f97f3e37619"
+    },
+    {
+      "path": "apps/web/src/domain/routeAccess.ts",
+      "bytes": 254,
+      "sha256": "0949d667f3b9f68628f95fb6d3c57a8dd4eb6d2fb552b7ea00d4d5be906dc605"
+    },
+    {
+      "path": "apps/web/src/domain/trialExpiry.ts",
+      "bytes": 1494,
+      "sha256": "f5101518c900aee46688a7ef20ae6df32071f0f13b620ce2d1336a7c9f11c3ce"
+    },
+    {
+      "path": "apps/web/src/layouts/LegacyShell.vue",
+      "bytes": 6626,
+      "sha256": "32b8c4a2b9fc00e75eca5a143edf8cdbd62143a2ed9eb6644fc4ef33bc22df17"
+    },
+    {
+      "path": "apps/web/src/layouts/MeasureShell.vue",
+      "bytes": 18627,
+      "sha256": "cad80b7b87d825e2914d1049f86f0d15d06baa47ddebe87408cc85420a443094"
+    },
+    {
+      "path": "apps/web/src/main.ts",
+      "bytes": 274,
+      "sha256": "9b3164e56fb438bc9d2ce2e0fd5f3c5880688a4a5e849149f9bfa1d127058c05"
+    },
+    {
+      "path": "apps/web/src/router/index.ts",
+      "bytes": 6677,
+      "sha256": "8451de2d912a25ba0d2adb7a500005dec92dd4275f2ac3a25acd5c54ee4185e5"
+    },
+    {
+      "path": "apps/web/src/services/adminWorkspaceApi.ts",
+      "bytes": 4897,
+      "sha256": "8ea74d44fd2ebb6db00d1d0fd4a97e4abd22070af29d5c8590a5ccdf131706e6"
+    },
+    {
+      "path": "apps/web/src/services/analyticsApi.ts",
+      "bytes": 4934,
+      "sha256": "2d06cda2a6d6eeb68c6ff8c1e9d079dba72f37ead24f05d3b3476478963c8fe2"
+    },
+    {
+      "path": "apps/web/src/services/apiClient.ts",
+      "bytes": 1329,
+      "sha256": "0a76b01f4f365756cab2c6d9c814bac691166752924c6575c0d070ad58b3a60b"
+    },
+    {
+      "path": "apps/web/src/services/assessmentApi.ts",
+      "bytes": 4655,
+      "sha256": "7e604c7fecda981f92ddfe65bc8913c0885b8e1578f75cdf980cd51a3f2524ef"
+    },
+    {
+      "path": "apps/web/src/services/assessmentWorkspaceApi.ts",
+      "bytes": 5554,
+      "sha256": "5bdf14090f00f591e633eeebe17fc841fab24fd40232d6d243186c89be9f71a5"
+    },
+    {
+      "path": "apps/web/src/services/authoringApi.ts",
+      "bytes": 3399,
+      "sha256": "6fab671f24e1501716008107ea6d1b0eafcf7811d67fb9a4203ccdaa6032924e"
+    },
+    {
+      "path": "apps/web/src/services/blueprintAuthoringApi.ts",
+      "bytes": 2287,
+      "sha256": "4b9548b7686e1693eef340204a7f5a54f2947b1cf3f0998424577b7625e16a71"
+    },
+    {
+      "path": "apps/web/src/services/contentApi.ts",
+      "bytes": 3381,
+      "sha256": "dff3fed5507784d52289a306257ba74384a482769b56437bb5f161f798b4352a"
+    },
+    {
+      "path": "apps/web/src/services/contentReviewApi.ts",
+      "bytes": 5202,
+      "sha256": "35856cf8e4495ac6727958690a26cde6e7ae559742a0a858ceda7f830aa79750"
+    },
+    {
+      "path": "apps/web/src/services/contentTrialApi.ts",
+      "bytes": 4133,
+      "sha256": "b53584b7cecb82f0a651d258e8e36b38e7a20cda4b42b97ed628997185baefe1"
+    },
+    {
+      "path": "apps/web/src/services/dialogueApi.ts",
+      "bytes": 6311,
+      "sha256": "74a2714479db8ff84873628307d95401029c2ea3fd4b3963116ef51668d6d0c3"
+    },
+    {
+      "path": "apps/web/src/services/growthGuideApi.ts",
+      "bytes": 10388,
+      "sha256": "c96413af33efb61ff70b1a29a81afb93230e07661a7f8acb0f0495627ff31cfb"
+    },
+    {
+      "path": "apps/web/src/services/pilotApi.ts",
+      "bytes": 9672,
+      "sha256": "fbd63a75b865bbd2a0b695c7ac2262a8ea36ef22e0b9008e1e31cacdd623e91f"
+    },
+    {
+      "path": "apps/web/src/services/platformLearnersApi.ts",
+      "bytes": 1373,
+      "sha256": "6631a478f4fd2e2833e22788fe35c500f434eca716013fdb1d60fd63112ea800"
+    },
+    {
+      "path": "apps/web/src/services/practicalApi.ts",
+      "bytes": 5988,
+      "sha256": "729d51273f3cf4342dc8669db58ced177264ec8aa8aab1e57593d0c11d8b84a8"
+    },
+    {
+      "path": "apps/web/src/services/registrationApi.ts",
+      "bytes": 1008,
+      "sha256": "a2a3b16e5723d87ae9afff257347602f836e0ab54d23392203de37211528fe19"
+    },
+    {
+      "path": "apps/web/src/services/reportApi.ts",
+      "bytes": 2580,
+      "sha256": "4c95e237b81d89c0dbb9de9a3ded64f3e56db2919d84a21de1b68b1e960326e7"
+    },
+    {
+      "path": "apps/web/src/services/reviewApi.ts",
+      "bytes": 5248,
+      "sha256": "40861086a2e20d93598fc0ff760ac65d6a0b7c42ed3f450c2113e05900045135"
+    },
+    {
+      "path": "apps/web/src/services/trainingApi.ts",
+      "bytes": 10305,
+      "sha256": "8f9e083cbac112a068fc3b70d9a124ca0a43872ef3f8d95a8c51c87a1210b6ce"
+    },
+    {
+      "path": "apps/web/src/services/workspaceApi.ts",
+      "bytes": 4680,
+      "sha256": "03d57e9aa5a13e41910d608054f73b09b3f1cc57c43f6550b67174dda2902d54"
+    },
+    {
+      "path": "apps/web/src/stores/access.ts",
+      "bytes": 3762,
+      "sha256": "59d4246b29fc4311737469f5a5cc8802645f5e439e5eb68979cd37a5e5992a71"
+    },
+    {
+      "path": "apps/web/src/stores/auth.ts",
+      "bytes": 11646,
+      "sha256": "caedd9a103999795224cd28ccfcfa9e3f27ff0e90206251d84951df66c797c92"
+    },
+    {
+      "path": "apps/web/src/stores/features.ts",
+      "bytes": 3706,
+      "sha256": "61213f8aa6829a8ec0be4fbd611eecb39302b8825138f17ed8fb9a7e1c473dde"
+    },
+    {
+      "path": "apps/web/src/stores/pinia.ts",
+      "bytes": 72,
+      "sha256": "487e2027859fefefea762d7b7f936e2174c47ecbe92db44626b3ef4544611b78"
+    },
+    {
+      "path": "apps/web/src/views/AccessDeniedView.vue",
+      "bytes": 588,
+      "sha256": "10eb81901bdf772e1c99454356135b385d3130db6f62ad4d5294e46382253b0b"
+    },
+    {
+      "path": "apps/web/src/views/AssessmentRunnerView.vue",
+      "bytes": 34246,
+      "sha256": "da5e81991c203032edb417e4f6671a47522ab470566b9c3ca1e20c89c27b3c36"
+    },
+    {
+      "path": "apps/web/src/views/AssessmentView.vue",
+      "bytes": 36728,
+      "sha256": "8a17e8cda83365b9920d36c0ed2cbfed94f9c835d1a5e9401e71491b4c9e2a31"
+    },
+    {
+      "path": "apps/web/src/views/AuthoringView.vue",
+      "bytes": 19319,
+      "sha256": "e8e29bef3a0dbcb7e71b0432880bfde5ab8575ba27b1b68dd897bbdade1d11a3"
+    },
+    {
+      "path": "apps/web/src/views/CatLabView.vue",
+      "bytes": 19758,
+      "sha256": "9505c560ef549610934c0387c1856342b4f6e94a85fdfb2a0bc9254fe54b6501"
+    },
+    {
+      "path": "apps/web/src/views/ContentTrialView.vue",
+      "bytes": 22889,
+      "sha256": "07bc5010cab1331caebaa60d58b843c5304c41e90cdfed16515ba5e5b336d208"
+    },
+    {
+      "path": "apps/web/src/views/HelpView.vue",
+      "bytes": 18207,
+      "sha256": "16aeea3d91e352e61de82f9d52d2f1c9457fcaf0806c19bfecb1ec137b3e841d"
+    },
+    {
+      "path": "apps/web/src/views/HistoryView.vue",
+      "bytes": 16447,
+      "sha256": "a9d7edb4edbe54db86efb7cb52734aaf9f2bce26f90adf498c662c1f49124edf"
+    },
+    {
+      "path": "apps/web/src/views/HomeView.vue",
+      "bytes": 18318,
+      "sha256": "f8ff30f2ad8fa066d5f59bac7e049b7df81c64237ca0458177cb0f3f9b4cd0fb"
+    },
+    {
+      "path": "apps/web/src/views/ItemBankView.vue",
+      "bytes": 23832,
+      "sha256": "b0acf5c28324633770699ded93ac12d6069f5f99590e549e61b3676876f00693"
+    },
+    {
+      "path": "apps/web/src/views/LoginView.vue",
+      "bytes": 10261,
+      "sha256": "927b7d826328636eff824429f290fca478c88dcb6465c0b04e822fec875144ff"
+    },
+    {
+      "path": "apps/web/src/views/MembersView.vue",
+      "bytes": 20838,
+      "sha256": "a481bf62b8a2748388f7c27b6c63731989f5cfece9a208b4f8d2e994cd0fb3a9"
+    },
+    {
+      "path": "apps/web/src/views/NotFoundView.vue",
+      "bytes": 913,
+      "sha256": "c1aaac6ad216033b35faa26f913b92a720bfd3a8404b96a0ed06eee04a0d81f6"
+    },
+    {
+      "path": "apps/web/src/views/OrganizationAnalyticsView.vue",
+      "bytes": 25435,
+      "sha256": "555f07b6e35e94a29d03c0da8b80c9d06080461db4748a1d23bc5a23cf5bd59d"
+    },
+    {
+      "path": "apps/web/src/views/PilotLabView.vue",
+      "bytes": 56410,
+      "sha256": "23add23fbdf05f0731f05b5fdaae2416b362ed13304a35320e7482d62bd551e9"
+    },
+    {
+      "path": "apps/web/src/views/PracticalWorkbenchView.vue",
+      "bytes": 45115,
+      "sha256": "50e93b796b7de4655e90b6f0da0ed1ea3340c7067f6dbecdfe65e59e9c5438db"
+    },
+    {
+      "path": "apps/web/src/views/RegisterView.vue",
+      "bytes": 11381,
+      "sha256": "911ecf1f32dc4769badb11ad51015ab37b0d659b57695f000f6caa125911f78c"
+    },
+    {
+      "path": "apps/web/src/views/ReportView.vue",
+      "bytes": 45569,
+      "sha256": "999ae59a3202ca143d3cf81b0a168b0e7dbc6a3e18d3d8bfef3432ec685e59b1"
+    },
+    {
+      "path": "apps/web/src/views/ReportsView.vue",
+      "bytes": 11505,
+      "sha256": "b6c08594de72e82f5a159ca992a42102c6660ac2db46c268802b9225ea74a6c0"
+    },
+    {
+      "path": "apps/web/src/views/ReviewWorkbenchView.vue",
+      "bytes": 25912,
+      "sha256": "621408a8b81c0b491dfba2297f4392e9072f37630a10211e8aa883efcccf0caf"
+    },
+    {
+      "path": "apps/web/src/views/SystemView.vue",
+      "bytes": 26536,
+      "sha256": "34f6f525adeef37943e294ec41d7bd6b7eb330624ec05cd5b6c7a176320efcdd"
+    },
+    {
+      "path": "apps/web/src/views/TeachingView.vue",
+      "bytes": 10022,
+      "sha256": "58a20a37be6311d6ec8fa84f9911ab786a9da7234c80a9ba976a8a9230f2fb44"
+    },
+    {
+      "path": "apps/web/src/views/TrainingView.vue",
+      "bytes": 65806,
+      "sha256": "784589f7b205e7e5f057cdb68adb435393f2c2288ddbfbefd39f2c2ebb8301f7"
+    },
+    {
+      "path": "apps/web/src/views/WorkspaceView.vue",
+      "bytes": 37641,
+      "sha256": "243bfd4d1bc8b640417ad196735305eef117132331b7a33809d3dc9fce669c49"
+    },
+    {
+      "path": "apps/web/tsconfig.app.json",
+      "bytes": 594,
+      "sha256": "92496d0db20bb707be8b697a9dc316c7ded1011f8a9998a472c89f3e612822f2"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "bytes": 191,
+      "sha256": "9c4d36d79809ab9835a9e674b60dd208f3c15958eb9f2dea1afb218f6d0e483b"
+    },
+    {
+      "path": "apps/web/tsconfig.node.json",
+      "bytes": 1004,
+      "sha256": "f3d48b85104c3b01aa68ee8758762eb6e90cb09677251f6b7b4b53360e37bde1"
+    },
+    {
+      "path": "apps/web/tsconfig.vitest.json",
+      "bytes": 667,
+      "sha256": "6aed91cc02f169d58a4757b98c7a69c4c80ba55c5692f62eba97335de0059302"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "bytes": 301,
+      "sha256": "826a01c0e98073bb394446a9b392bc0c1cb6ab8c6e8c1be91314f08ba04a0e09"
+    },
+    {
+      "path": "apps/web/vitest.config.ts",
+      "bytes": 385,
+      "sha256": "d7364f879e1e5fff342aff834176bbe550279c880c10b1e6468d08fe1d479fdc"
+    }
+  ]
+}

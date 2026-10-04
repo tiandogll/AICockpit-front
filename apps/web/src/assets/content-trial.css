@@ -1,0 +1,245 @@
+.trial-page {
+  --trial-teal: #137f91;
+  --trial-ink: #183b46;
+  --trial-muted: #5d727a;
+  --trial-line: #d8e6ea;
+  --trial-pale: #eaf5f7;
+  color: var(--trial-ink);
+  padding-block: 38px 64px;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.trial-heading,
+.card-heading,
+.trial-row,
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.trial-heading {
+  align-items: flex-start;
+}
+h1 {
+  font-family: 'Source Han Serif SC', 'Songti SC', SimSun, serif;
+  font-size: clamp(24px, 3.5vw, 32px);
+  margin: 8px 0;
+}
+h2 {
+  font-size: 18px;
+  margin: 3px 0;
+}
+h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+p {
+  margin: 8px 0;
+}
+.trial-heading p,
+.retention,
+.trial-row p,
+small {
+  color: var(--trial-muted);
+}
+.trial-label {
+  color: var(--trial-teal);
+  font-weight: 700;
+  font-size: 13px;
+}
+.scope-note {
+  display: grid;
+  gap: 5px;
+  border-left: 3px solid var(--trial-teal);
+  background: var(--trial-pale);
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+.scope-note span,
+.retention {
+  font-size: 13px;
+}
+.trial-card,
+.trial-list {
+  border: 1px solid var(--trial-line);
+  background: white;
+  border-radius: 14px;
+  margin-top: 22px;
+}
+.trial-card {
+  max-width: 900px;
+  padding: 28px;
+  margin-inline: auto;
+}
+.trial-row {
+  padding: 22px 26px;
+  border-bottom: 1px solid var(--trial-line);
+}
+.trial-row:last-child {
+  border: 0;
+}
+.trial-row > div {
+  flex: 1;
+}
+.status-pill {
+  color: var(--trial-teal);
+  background: var(--trial-pale);
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+code {
+  font-family: 'Cascadia Mono', Consolas, monospace;
+  font-size: 12px;
+  color: var(--trial-muted);
+  overflow-wrap: anywhere;
+}
+.trial-link {
+  display: inline-block;
+  color: var(--trial-teal);
+  background: none;
+  border: 0;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  padding: 7px 0;
+}
+.trial-heading > a {
+  white-space: nowrap;
+}
+.trial-error,
+.trial-notice {
+  border-radius: 9px;
+  padding: 14px 18px;
+  margin-block: 16px;
+  overflow-wrap: anywhere;
+}
+.trial-error {
+  background: #fff0ed;
+  color: #923628;
+}
+.trial-notice {
+  background: var(--trial-pale);
+  color: var(--trial-teal);
+}
+.trial-state {
+  color: var(--trial-muted);
+  padding: 26px 18px;
+}
+.consent-panel,
+.submitted-panel {
+  margin-top: 24px;
+}
+ul {
+  padding-left: 22px;
+}
+li + li {
+  margin-top: 8px;
+}
+.check-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-block: 22px;
+}
+input {
+  accent-color: var(--trial-teal);
+  margin-top: 6px;
+}
+.feedback-label {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  font-weight: 700;
+}
+.feedback-label span,
+.feedback-label small {
+  color: var(--trial-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+textarea {
+  padding: 12px;
+  border: 1px solid var(--trial-line);
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 400;
+  resize: vertical;
+  color: var(--trial-ink);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+.confirm-box {
+  margin-top: 20px;
+  border: 1px solid var(--trial-teal);
+  background: var(--trial-pale);
+  border-radius: 10px;
+  padding: 20px;
+}
+.withdraw-area {
+  border-top: 1px solid var(--trial-line);
+  padding-top: 18px;
+  margin-top: 26px;
+}
+.withdraw-area > button {
+  font-size: 13px;
+  color: var(--trial-muted);
+}
+dl {
+  margin: 20px 0;
+}
+dt {
+  font-weight: 700;
+  margin-top: 16px;
+}
+dd {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 6px 0 0;
+  padding: 12px;
+  border: 1px solid var(--trial-line);
+  border-radius: 8px;
+}
+.pagination {
+  padding: 18px 22px;
+}
+button {
+  min-height: 40px;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+:is(a, button, input, textarea):focus-visible {
+  outline: 2px solid var(--trial-teal);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .trial-heading {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .trial-card {
+    padding: 18px;
+  }
+  .trial-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px;
+  }
+  .trial-row > div {
+    flex-basis: 65%;
+  }
+  .trial-page {
+    padding-block: 22px 40px;
+  }
+}
